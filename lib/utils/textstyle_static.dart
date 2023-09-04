@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class TextStyles {
-  static const app_bar = TextStyle(color: Colors.black);
+  static const app_bar = TextStyle(color: Colors.black, fontSize: 17);
   // for app_bar only
-  static const inside = TextStyle(color: Colors.black, fontSize: 20);
+  static const inside = TextStyle(
+      // color: Colors.black,
+      fontSize: 15);
   // for inside
   static const qus = TextStyle(
     color: Colors.black,

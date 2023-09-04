@@ -50,7 +50,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 child: TextFormField(
                   decoration: InputDecoration(
                     border: InputBorder.none,
-                    hintText: "01*********",
+                    hintText: "01XXXXXXXXX",
                     prefixIcon: Icon(Icons.phone),
                   ),
                 ),
@@ -79,6 +79,10 @@ class _SignUpPageState extends State<SignUpPage> {
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),
                 ),
               ),
+            ),
+            Text(
+              "You'll receive a 4 digit code to verify next",
+              style: TextStyles.inside,
             ),
             SizedBox(
               height: 20,

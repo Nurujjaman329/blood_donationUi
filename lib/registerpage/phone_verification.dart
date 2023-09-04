@@ -49,10 +49,11 @@ class VerifyPage extends StatelessWidget {
                     currentCode: _code,
                     onCodeSubmitted: (code) {},
                     onCodeChanged: (code) {
-                      if (code!.length == 5) {
+                      if (code!.length == 4) {
                         FocusScope.of(context).requestFocus(FocusNode());
                       }
                     },
+                    codeLength: 4,
                   ),
                 ),
                 //const Spacer(),
