@@ -1,3 +1,5 @@
+import 'package:firstapp/drawerpage/privacy_security.dart';
+import 'package:firstapp/drawerpage/terms_condition.dart';
 import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/material.dart';
@@ -49,16 +51,19 @@ class _MainPageState extends State<MainPage> {
                 decoration: BoxDecoration(color: ColorCode.drawer_header),
                 accountName: Text(
                   "Md Nurujjaman",
-                  style: TextStyle(fontSize: 18),
+                  style: TextStyle(fontSize: 18, color: Colors.black),
                 ),
-                accountEmail: Text("mdnurujjaman329@gmail.com"),
+                accountEmail: Text(
+                  "mdnurujjaman329@gmail.com",
+                  style: TextStyle(fontSize: 12, color: Colors.black),
+                ),
                 currentAccountPictureSize: Size.square(50),
                 currentAccountPicture: CircleAvatar(
                   backgroundColor: ColorCode.drawer_border,
-                  //child: Text(
-                  //  "N",
-                  //  style: TextStyle(fontSize: 30.0, color: Colors.blue),
-                  //),
+                  child: Text(
+                    "N",
+                    style: TextStyle(fontSize: 30.0, color: Colors.white),
+                  ),
                 ),
               ),
             ),
@@ -111,14 +116,24 @@ class _MainPageState extends State<MainPage> {
               title: const Text(' Privacy & Security '),
               trailing: Icon(Icons.arrow_forward),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PrivacySecurityPage(),
+                  ),
+                );
               },
             ),
             ListTile(
               title: const Text('Terms & Condition'),
               trailing: Icon(Icons.arrow_forward),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TermsConditionPage(),
+                  ),
+                );
               },
             ),
             Container(

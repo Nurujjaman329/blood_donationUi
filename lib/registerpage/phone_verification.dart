@@ -37,7 +37,7 @@ class VerifyPage extends StatelessWidget {
                 ),
                 // const Spacer(),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(25.0),
                   child: PinFieldAutoFill(
                     textInputAction: TextInputAction.done,
                     decoration: BoxLooseDecoration(
