@@ -2,8 +2,8 @@ import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/material.dart';
 
-class DialogPage extends StatelessWidget {
-  const DialogPage({super.key});
+class UserFeedBack extends StatelessWidget {
+  const UserFeedBack({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,26 +11,16 @@ class DialogPage extends StatelessWidget {
       padding: EdgeInsets.only(top: 8.0),
       child: Container(
         alignment: Alignment.center,
-        height: MediaQuery.of(context).size.height / 2.4,
+        height: MediaQuery.of(context).size.height / 3.5,
         decoration: BoxDecoration(
-            color: Colors.white, borderRadius: BorderRadius.circular(15.0)),
+            color: Colors.white, borderRadius: BorderRadius.circular(10.0)),
         child: Column(children: [
           Text(
-            "Change Password",
+            "User Feed Back",
             style: TextStyles.inside,
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: TextFormField(
-              textInputAction: TextInputAction.done,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderSide: BorderSide(color: ColorCode.text_color),
-                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                hintText: "Old Password ",
-                prefixIcon: Icon(Icons.security_rounded),
-              ),
-            ),
+          SizedBox(
+            height: 25,
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -40,20 +30,7 @@ class DialogPage extends StatelessWidget {
                 border: OutlineInputBorder(
                     borderSide: BorderSide(color: ColorCode.text_color),
                     borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                hintText: "New Password ",
-                prefixIcon: Icon(Icons.security_rounded),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: TextFormField(
-              textInputAction: TextInputAction.done,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderSide: BorderSide(color: ColorCode.text_color),
-                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                hintText: "Re_Type Password ",
+                hintText: "Comment ",
                 prefixIcon: Icon(Icons.security_rounded),
               ),
             ),
@@ -68,7 +45,7 @@ class DialogPage extends StatelessWidget {
                     Navigator.pop(context);
                   },
                   child: Text(
-                    "Cancel",
+                    "Close ",
                     style: TextStyles.app_bar,
                   ),
                 ),
@@ -80,7 +57,7 @@ class DialogPage extends StatelessWidget {
                     Navigator.pop(context);
                   },
                   child: Text(
-                    "save",
+                    "Send",
                     style: TextStyles.app_bar,
                   ),
                 ),

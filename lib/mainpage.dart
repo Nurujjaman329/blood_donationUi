@@ -1,6 +1,8 @@
 import 'package:firstapp/custom_widget/listtile_widget.dart';
+import 'package:firstapp/drawerpage/dialog_page.dart';
 import 'package:firstapp/drawerpage/privacy_security.dart';
 import 'package:firstapp/drawerpage/terms_condition.dart';
+import 'package:firstapp/drawerpage/user_feedback.dart';
 import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/material.dart';
@@ -85,20 +87,26 @@ class _MainPageState extends State<MainPage> {
               title: const Text(' Change Password '),
               trailing: Icon(Icons.arrow_forward),
               onTap: () {
-                //showDialog(
-                //    context: context,
-                //    builder: (context) {
-                //      return Dialog(
-                //        child: ,
-                //      );
-                //    });
+                showDialog(
+                    context: context,
+                    builder: (context) {
+                      return Dialog(
+                        child: DialogPage(),
+                      );
+                    });
               },
             ),
             ListTile(
               title: const Text(' User Feed Back '),
               trailing: Icon(Icons.arrow_forward),
               onTap: () {
-                Navigator.pop(context);
+                showDialog(
+                    context: context,
+                    builder: (context) {
+                      return Dialog(
+                        child: UserFeedBack(),
+                      );
+                    });
               },
             ),
             ListTile(
