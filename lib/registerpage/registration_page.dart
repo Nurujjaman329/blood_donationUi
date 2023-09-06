@@ -23,70 +23,73 @@ class _RegistrationPageState extends State<RegistrationPage> {
           style: TextStyles.app_bar,
         ),
       ),
-      body: Container(
-        child: Column(
-          children: [
-            Container(
-              width: 350,
-              decoration: BoxDecoration(
-                color: Colors.grey,
-                borderRadius: new BorderRadius.circular(10.0),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: "Full Name",
-                    prefixIcon: Icon(Icons.man),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Container(
+          child: Column(
+            children: [
+              Container(
+                width: 350,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "Full Name",
+                      prefixIcon: Icon(Icons.man),
+                    ),
                   ),
                 ),
               ),
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * .01,
-            ),
-            Container(
-              width: 350,
-              decoration: BoxDecoration(
-                color: Colors.grey,
-                borderRadius: new BorderRadius.circular(10.0),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * .01,
               ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: "Email",
-                    prefixIcon: Icon(Icons.email),
+              Container(
+                width: 350,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "Email",
+                      prefixIcon: Icon(Icons.email),
+                    ),
                   ),
                 ),
               ),
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * .01,
-            ),
-            Container(
-              width: 350,
-              decoration: BoxDecoration(
-                color: Colors.grey,
-                borderRadius: new BorderRadius.circular(10.0),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * .01,
               ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: "Password",
-                    prefixIcon: Icon(Icons.lock),
+              Container(
+                width: 350,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: new BorderRadius.circular(10.0),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "Password",
+                      prefixIcon: Icon(Icons.lock),
+                    ),
                   ),
                 ),
               ),
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * .01,
-            ),
-          ],
+              SizedBox(
+                height: MediaQuery.of(context).size.height * .01,
+              ),
+            ],
+          ),
         ),
       ),
     );
