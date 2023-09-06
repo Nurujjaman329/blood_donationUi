@@ -8,14 +8,14 @@ class DialogPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 8.0),
+      padding: const EdgeInsets.only(top: 8.0),
       child: Container(
         alignment: Alignment.center,
         height: MediaQuery.of(context).size.height / 2.4,
         decoration: BoxDecoration(
             color: Colors.white, borderRadius: BorderRadius.circular(15.0)),
         child: Column(children: [
-          Text(
+          const Text(
             "Change Password",
             style: TextStyles.inside,
           ),
@@ -23,7 +23,7 @@ class DialogPage extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: TextFormField(
               textInputAction: TextInputAction.done,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 border: OutlineInputBorder(
                     borderSide: BorderSide(color: ColorCode.text_color),
                     borderRadius: BorderRadius.all(Radius.circular(20.0))),
@@ -36,7 +36,7 @@ class DialogPage extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: TextFormField(
               textInputAction: TextInputAction.done,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 border: OutlineInputBorder(
                     borderSide: BorderSide(color: ColorCode.text_color),
                     borderRadius: BorderRadius.all(Radius.circular(20.0))),

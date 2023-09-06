@@ -16,7 +16,5 @@ class TextStyles {
     color: Colors.green,
     fontSize: 17,
   );
-  static const signOut = TextStyle(
-    fontSize: 15,
-  );
+  static const signOut = TextStyle(fontSize: 15, color: Colors.black);
 }

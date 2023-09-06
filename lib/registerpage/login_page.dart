@@ -1,4 +1,4 @@
-import 'package:firstapp/mainpage.dart';
+import 'package:firstapp/mainpage/mainpage.dart';
 import 'package:firstapp/registerpage/signup_page.dart';
 import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/image_static.dart';
