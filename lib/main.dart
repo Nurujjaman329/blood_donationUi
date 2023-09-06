@@ -1,3 +1,4 @@
+import 'package:firstapp/drawerpage/dialog_page.dart';
 import 'package:firstapp/homepage.dart';
 import 'package:firstapp/registerpage/login_page.dart';
 import 'package:firstapp/registerpage/phone_verification.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: DialogPage(),
     );
   }
 }

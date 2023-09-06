@@ -1,3 +1,4 @@
+import 'package:firstapp/custom_widget/listtile_widget.dart';
 import 'package:firstapp/drawerpage/privacy_security.dart';
 import 'package:firstapp/drawerpage/terms_condition.dart';
 import 'package:firstapp/utils/color_static.dart';
@@ -45,10 +46,10 @@ class _MainPageState extends State<MainPage> {
           children: [
             DrawerHeader(
               decoration: BoxDecoration(
-                color: ColorCode.drawer_header,
+                color: ColorCode.white,
               ),
               child: UserAccountsDrawerHeader(
-                decoration: BoxDecoration(color: ColorCode.drawer_header),
+                decoration: BoxDecoration(color: ColorCode.white),
                 accountName: Text(
                   "Md Nurujjaman",
                   style: TextStyle(fontSize: 18, color: Colors.black),
@@ -67,42 +68,30 @@ class _MainPageState extends State<MainPage> {
                 ),
               ),
             ),
+            Divider(
+              color: ColorCode.drawer_border,
+              thickness: 3,
+            ),
             ListTile(
               title: Text('I Want To Donate '),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
-            ListTile(
-              title: const Text(' Home Page '),
-              trailing: Icon(Icons.arrow_forward),
-              onTap: () {
-                Navigator.pop(context);
-              },
+            custom_listtile(
+              "Home Page",
             ),
             ListTile(
               title: const Text(' Change Password '),
               trailing: Icon(Icons.arrow_forward),
               onTap: () {
-                AlertDialog(
-                  title: Text('Welcome'), // To display the title it is optional
-                  content: Text(
-                      'GeeksforGeeks'), // Message which will be pop up on the screen
-                  // Action widget which will provide the user to acknowledge the choice
-                  actions: [
-                    TextButton(
-                      // FlatButton widget is used to make a text to work like a button
-
-                      onPressed:
-                          () {}, // function used to perform after pressing the button
-                      child: Text('CANCEL'),
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text('ACCEPT'),
-                    ),
-                  ],
-                );
+                //showDialog(
+                //    context: context,
+                //    builder: (context) {
+                //      return Dialog(
+                //        child: ,
+                //      );
+                //    });
               },
             ),
             ListTile(
@@ -136,14 +125,24 @@ class _MainPageState extends State<MainPage> {
                 );
               },
             ),
+            Divider(
+              color: ColorCode.drawer_border,
+              thickness: 3,
+            ),
+            SizedBox(
+              height: 50,
+            ),
             Container(
-              height: MediaQuery.of(context).size.height * .003,
+              //alignment: Alignment.center,
+              height: 101,
+              width: 10,
               decoration: BoxDecoration(
-                color: ColorCode.drawer_border,
-                border: Border(
-                  bottom: Divider.createBorderSide(context),
-                ),
-              ),
+                  color: ColorCode.text_color,
+                  borderRadius: BorderRadius.circular(10.0)),
+              //child: Text(
+              //  "SignOut",
+              //  style: TextStyles.signOut,
+              //),
             ),
           ],
         ),

@@ -9,10 +9,11 @@ class ColorCode {
 
   static const drawer_border = Colors.grey;
   // for drawer border color
-  static const drawer_header = Colors.white;
+  static const white = Colors.white;
   // for drawer header color
   static const appbar_color1 = Colors.white;
   // for white appbar
   static const appbar_color2 = Colors.red;
   // for red appbar
+  static const text_color = Colors.black;
 }
