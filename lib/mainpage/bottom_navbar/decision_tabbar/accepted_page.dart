@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class PendingPage extends StatefulWidget {
-  const PendingPage({super.key});
+class AcceptedPage extends StatefulWidget {
+  const AcceptedPage({super.key});
 
   @override
-  State<PendingPage> createState() => _PendingPageState();
+  State<AcceptedPage> createState() => _AcceptedPageState();
 }
 
-class _PendingPageState extends State<PendingPage> {
+class _AcceptedPageState extends State<AcceptedPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

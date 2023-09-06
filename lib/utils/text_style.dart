@@ -6,4 +6,9 @@ class Styles {
     fontSize: 8,
     color: ColorCode.text_color,
   );
+
+  static TextStyle average = TextStyle(
+    fontSize: 15,
+    color: Colors.black,
+  );
 }

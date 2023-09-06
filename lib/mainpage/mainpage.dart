@@ -4,6 +4,7 @@ import 'package:firstapp/drawerpage/terms_condition.dart';
 import 'package:firstapp/drawerpage/user_feedback.dart';
 import 'package:firstapp/mainpage/bottom_navbar/decision_page.dart';
 import 'package:firstapp/mainpage/bottom_navbar/comment_page.dart';
+import 'package:firstapp/mainpage/bottom_navbar/home_page.dart';
 import 'package:firstapp/mainpage/bottom_navbar/profile_page.dart';
 import 'package:firstapp/mainpage/bottom_navbar/timer_page.dart';
 import 'package:firstapp/utils/color_static.dart';
@@ -25,6 +26,7 @@ class _MainPageState extends State<MainPage> {
   var _pageIndex = 0;
 
   final List<Widget> _pages = [
+    HomePage(),
     DecisionPage(),
     CommentPage(),
     TimerPage(),
@@ -34,30 +36,6 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        iconTheme: IconThemeData(color: Colors.black),
-        backgroundColor: Colors.red,
-        title: Row(
-          children: [
-            CircleAvatar(child: Image.asset("assets/images/mainpageimage.jpg")),
-            Text(
-              "Scouts Blood Donation\n   Bangladesh Scouts",
-              style: TextStyles.app_bar,
-            ),
-          ],
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Icon(
-              Icons.notification_add_outlined,
-              size: 35,
-            ),
-          )
-        ],
-      ),
-      drawer: MyDrawer(),
       bottomNavigationBar: BottomNavigationBar(
         // type: BottomNavigationBarType.fixed,
         unselectedItemColor: Color.fromARGB(255, 119, 115, 115),
@@ -69,6 +47,10 @@ class _MainPageState extends State<MainPage> {
           });
         },
         items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
           BottomNavigationBarItem(
             icon: Icon(Icons.save),
             label: 'Decision',
