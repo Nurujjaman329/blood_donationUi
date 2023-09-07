@@ -4,17 +4,27 @@ import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class AcceptedPage extends StatefulWidget {
-  const AcceptedPage({super.key});
+class PatientReq extends StatefulWidget {
+  const PatientReq({super.key});
 
   @override
-  State<AcceptedPage> createState() => _AcceptedPageState();
+  State<PatientReq> createState() => _PatientReqState();
 }
 
-class _AcceptedPageState extends State<AcceptedPage> {
+class _PatientReqState extends State<PatientReq> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black),
+        elevation: 0,
+        backgroundColor: Colors.white,
+        title: Text(
+          "Patient Request",
+          style: TextStyles.app_bar,
+        ),
+        actions: [Icon(Icons.ring_volume_rounded)],
+      ),
       body: ListView.builder(
           itemCount: 5,
           itemBuilder: (BuildContext context, int index) {
@@ -25,7 +35,7 @@ class _AcceptedPageState extends State<AcceptedPage> {
                 shadowColor: Colors.black,
                 color: Colors.white,
                 child: SizedBox(
-                  height: 120,
+                  height: 170,
                   width: double.infinity,
                   child: ListTile(
                     leading: CircleAvatar(
@@ -46,6 +56,14 @@ class _AcceptedPageState extends State<AcceptedPage> {
                             style: Styles.maxaverage,
                           ),
                           Text(
+                            "Email :",
+                            style: Styles.maxaverage,
+                          ),
+                          Text(
+                            "Sender Gender :",
+                            style: Styles.maxaverage,
+                          ),
+                          Text(
                             "Description :",
                             style: Styles.maxaverage,
                           ),
@@ -53,18 +71,22 @@ class _AcceptedPageState extends State<AcceptedPage> {
                             "Reason :",
                             style: Styles.maxaverage,
                           ),
+                          Text(
+                            "Status :",
+                            style: Styles.maxaverage,
+                          ),
                           SizedBox(
                             height: 15,
                           ),
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.end,
                             children: [
                               Container(
                                 alignment: Alignment.center,
                                 height: 35,
                                 width: 60,
                                 child: Text(
-                                  "Ring",
+                                  "Decline",
                                   style: TextStyles.signOut,
                                 ),
                                 decoration: BoxDecoration(
@@ -91,14 +113,14 @@ class _AcceptedPageState extends State<AcceptedPage> {
                                 ),
                               ),
                               SizedBox(
-                                width: 3,
+                                width: 10,
                               ),
                               Container(
                                 alignment: Alignment.center,
                                 height: 35,
                                 width: 60,
                                 child: Text(
-                                  "Cancel",
+                                  "Accept",
                                   style: TextStyles.signOut,
                                 ),
                                 decoration: BoxDecoration(
@@ -121,45 +143,6 @@ class _AcceptedPageState extends State<AcceptedPage> {
                                         width: 1,
                                         color: ColorCode.text_color,
                                         style: BorderStyle.solid), //
-                                  ),
-                                ),
-                              ),
-                              SizedBox(
-                                width: 3,
-                              ),
-                              GestureDetector(
-                                child: Container(
-                                  alignment: Alignment.center,
-                                  height: 35,
-                                  width: 60,
-                                  child: Text(
-                                    "Success",
-                                    style: TextStyles.signOut,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color: ColorCode.card_button,
-                                    borderRadius: BorderRadius.circular(10.0),
-                                    border: const Border(
-                                      top: BorderSide(
-                                          width: 1,
-                                          color: ColorCode.text_color,
-                                          style:
-                                              BorderStyle.solid), //BorderSide
-                                      bottom: BorderSide(
-                                          width: 1,
-                                          color: ColorCode.text_color,
-                                          style:
-                                              BorderStyle.solid), //BorderSide
-                                      left: BorderSide(
-                                          width: 1,
-                                          color: ColorCode.text_color,
-                                          style:
-                                              BorderStyle.solid), //Borderside
-                                      right: BorderSide(
-                                          width: 1,
-                                          color: ColorCode.text_color,
-                                          style: BorderStyle.solid), //
-                                    ),
                                   ),
                                 ),
                               ),

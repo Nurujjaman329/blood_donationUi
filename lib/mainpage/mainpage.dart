@@ -3,7 +3,7 @@ import 'package:firstapp/drawerpage/privacy_security.dart';
 import 'package:firstapp/drawerpage/terms_condition.dart';
 import 'package:firstapp/drawerpage/user_feedback.dart';
 import 'package:firstapp/mainpage/bottom_navbar/decision_page.dart';
-import 'package:firstapp/mainpage/bottom_navbar/comment_page.dart';
+import 'package:firstapp/mainpage/bottom_navbar/patient_req.dart';
 import 'package:firstapp/mainpage/bottom_navbar/home_page.dart';
 import 'package:firstapp/mainpage/bottom_navbar/profile_page.dart';
 import 'package:firstapp/mainpage/bottom_navbar/timer_page.dart';
@@ -28,7 +28,7 @@ class _MainPageState extends State<MainPage> {
   final List<Widget> _pages = [
     HomePage(),
     DecisionPage(),
-    CommentPage(),
+    PatientReq(),
     TimerPage(),
     ProfilePage(),
   ];

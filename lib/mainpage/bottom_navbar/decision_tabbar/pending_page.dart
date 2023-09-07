@@ -26,7 +26,7 @@ class _PendingPageState extends State<PendingPage> {
                 shadowColor: Colors.black,
                 color: Colors.white,
                 child: SizedBox(
-                  height: 200,
+                  height: 160,
                   width: double.infinity,
                   child: ListTile(
                     leading: CircleAvatar(
@@ -36,13 +36,34 @@ class _PendingPageState extends State<PendingPage> {
                     title: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Receiver Name :"),
-                        Text("Phone no :"),
-                        Text("Email :"),
-                        Text("Gender :"),
-                        Text("Birth day :"),
-                        Text("Description :"),
-                        Text("Reason :"),
+                        Text(
+                          "Receiver Name :",
+                          style: Styles.maxaverage,
+                        ),
+                        Text(
+                          "Phone no :",
+                          style: Styles.maxaverage,
+                        ),
+                        Text(
+                          "Email :",
+                          style: Styles.maxaverage,
+                        ),
+                        Text(
+                          "Gender :",
+                          style: Styles.maxaverage,
+                        ),
+                        Text(
+                          "Birth day :",
+                          style: Styles.maxaverage,
+                        ),
+                        Text(
+                          "Description :",
+                          style: Styles.maxaverage,
+                        ),
+                        Text(
+                          "Reason :",
+                          style: Styles.maxaverage,
+                        ),
                         SizedBox(
                           height: 15,
                         ),
@@ -52,12 +73,13 @@ class _PendingPageState extends State<PendingPage> {
                             Container(
                               alignment: Alignment.center,
                               height: 35,
-                              width: 50,
+                              width: 65,
                               child: Text(
                                 "Ring",
                                 style: TextStyles.signOut,
                               ),
                               decoration: BoxDecoration(
+                                color: ColorCode.card_button,
                                 borderRadius: BorderRadius.circular(10.0),
                                 border: const Border(
                                   top: BorderSide(
@@ -79,15 +101,19 @@ class _PendingPageState extends State<PendingPage> {
                                 ),
                               ),
                             ),
+                            SizedBox(
+                              width: 3,
+                            ),
                             Container(
                               alignment: Alignment.center,
                               height: 35,
-                              width: 50,
+                              width: 62,
                               child: Text(
                                 "Cancel",
                                 style: TextStyles.signOut,
                               ),
                               decoration: BoxDecoration(
+                                color: ColorCode.card_button,
                                 borderRadius: BorderRadius.circular(10.0),
                                 border: const Border(
                                   top: BorderSide(
@@ -109,16 +135,20 @@ class _PendingPageState extends State<PendingPage> {
                                 ),
                               ),
                             ),
+                            SizedBox(
+                              width: 3,
+                            ),
                             GestureDetector(
                               child: Container(
                                 alignment: Alignment.center,
                                 height: 35,
-                                width: 60,
+                                width: 62,
                                 child: Text(
                                   "Success",
                                   style: TextStyles.signOut,
                                 ),
                                 decoration: BoxDecoration(
+                                  color: ColorCode.card_button,
                                   borderRadius: BorderRadius.circular(10.0),
                                   border: const Border(
                                     top: BorderSide(
@@ -145,6 +175,7 @@ class _PendingPageState extends State<PendingPage> {
                         ),
                       ],
                     ),
+
                     trailing: Column(
                       children: [
                         Text(

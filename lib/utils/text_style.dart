@@ -16,4 +16,8 @@ class Styles {
     fontSize: 15,
     color: Colors.black,
   );
+  static TextStyle maxaverage = TextStyle(
+    fontSize: 12,
+    //color: Colors.black,
+  );
 }

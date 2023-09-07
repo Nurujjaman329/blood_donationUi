@@ -16,4 +16,8 @@ class ColorCode {
   static const appbar_color2 = Colors.red;
   // for red appbar
   static const text_color = Colors.black;
+
+  static const card_button = Colors.white;
+
+  static const green = Colors.green;
 }
