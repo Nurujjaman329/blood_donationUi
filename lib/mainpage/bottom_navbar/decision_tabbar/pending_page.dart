@@ -44,14 +44,15 @@ class _PendingPageState extends State<PendingPage> {
                         Text("Description :"),
                         Text("Reason :"),
                         SizedBox(
-                          height: 30,
+                          height: 15,
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Container(
                               alignment: Alignment.center,
-                              height: 50,
-                              width: 100,
+                              height: 35,
+                              width: 50,
                               child: Text(
                                 "Ring",
                                 style: TextStyles.signOut,
@@ -80,8 +81,8 @@ class _PendingPageState extends State<PendingPage> {
                             ),
                             Container(
                               alignment: Alignment.center,
-                              height: 50,
-                              width: 100,
+                              height: 35,
+                              width: 50,
                               child: Text(
                                 "Cancel",
                                 style: TextStyles.signOut,
@@ -108,33 +109,35 @@ class _PendingPageState extends State<PendingPage> {
                                 ),
                               ),
                             ),
-                            Container(
-                              alignment: Alignment.center,
-                              height: 50,
-                              width: 50,
-                              child: Text(
-                                "Success",
-                                style: TextStyles.signOut,
-                              ),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10.0),
-                                border: const Border(
-                                  top: BorderSide(
-                                      width: 1,
-                                      color: ColorCode.text_color,
-                                      style: BorderStyle.solid), //BorderSide
-                                  bottom: BorderSide(
-                                      width: 1,
-                                      color: ColorCode.text_color,
-                                      style: BorderStyle.solid), //BorderSide
-                                  left: BorderSide(
-                                      width: 1,
-                                      color: ColorCode.text_color,
-                                      style: BorderStyle.solid), //Borderside
-                                  right: BorderSide(
-                                      width: 1,
-                                      color: ColorCode.text_color,
-                                      style: BorderStyle.solid), //
+                            GestureDetector(
+                              child: Container(
+                                alignment: Alignment.center,
+                                height: 35,
+                                width: 60,
+                                child: Text(
+                                  "Success",
+                                  style: TextStyles.signOut,
+                                ),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                  border: const Border(
+                                    top: BorderSide(
+                                        width: 1,
+                                        color: ColorCode.text_color,
+                                        style: BorderStyle.solid), //BorderSide
+                                    bottom: BorderSide(
+                                        width: 1,
+                                        color: ColorCode.text_color,
+                                        style: BorderStyle.solid), //BorderSide
+                                    left: BorderSide(
+                                        width: 1,
+                                        color: ColorCode.text_color,
+                                        style: BorderStyle.solid), //Borderside
+                                    right: BorderSide(
+                                        width: 1,
+                                        color: ColorCode.text_color,
+                                        style: BorderStyle.solid), //
+                                  ),
                                 ),
                               ),
                             ),
