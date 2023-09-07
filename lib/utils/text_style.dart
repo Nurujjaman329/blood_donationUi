@@ -20,4 +20,9 @@ class Styles {
     fontSize: 12,
     //color: Colors.black,
   );
+
+  static TextStyle large1 = TextStyle(
+    fontSize: 16,
+    //color: Colors.black,
+  );
 }

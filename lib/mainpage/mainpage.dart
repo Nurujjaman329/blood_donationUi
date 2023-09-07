@@ -1,19 +1,11 @@
-import 'package:firstapp/drawerpage/dialog_page.dart';
-import 'package:firstapp/drawerpage/privacy_security.dart';
-import 'package:firstapp/drawerpage/terms_condition.dart';
-import 'package:firstapp/drawerpage/user_feedback.dart';
 import 'package:firstapp/mainpage/bottom_navbar/decision_page.dart';
 import 'package:firstapp/mainpage/bottom_navbar/patient_req.dart';
 import 'package:firstapp/mainpage/bottom_navbar/home_page.dart';
 import 'package:firstapp/mainpage/bottom_navbar/profile_page.dart';
 import 'package:firstapp/mainpage/bottom_navbar/timer_page.dart';
-import 'package:firstapp/utils/color_static.dart';
-import 'package:firstapp/mainpage/bottom_navbar/main_page.dart/bottom_navbar.dart';
-import 'package:firstapp/utils/textstyle_static.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../drawerpage/drawer_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});

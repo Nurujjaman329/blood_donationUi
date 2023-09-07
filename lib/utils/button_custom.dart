@@ -14,4 +14,17 @@ class buttonCustom {
           borderRadius: BorderRadius.all(Radius.circular(10.0))),
     ),
   );
+
+  static final blood_group = InkWell(
+    onTap: () {},
+    child: Container(
+      width: 300,
+      height: 50,
+      alignment: Alignment.center,
+      child: Text("Verify"),
+      decoration: BoxDecoration(
+          color: ColorCode.button_color,
+          borderRadius: BorderRadius.all(Radius.circular(10.0))),
+    ),
+  );
 }
