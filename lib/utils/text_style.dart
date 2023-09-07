@@ -7,6 +7,11 @@ class Styles {
     color: ColorCode.text_color,
   );
 
+  static TextStyle small = TextStyle(
+    fontSize: 20,
+    color: Colors.red,
+  );
+
   static TextStyle average = TextStyle(
     fontSize: 15,
     color: Colors.black,
