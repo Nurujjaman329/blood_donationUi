@@ -1,5 +1,5 @@
 import 'package:firstapp/utils/color_static.dart';
-import 'package:firstapp/utils/text_style.dart';
+
 import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

@@ -31,7 +31,7 @@ class UserFeedBack extends StatelessWidget {
                     borderSide: BorderSide(color: ColorCode.text_color),
                     borderRadius: BorderRadius.all(Radius.circular(20.0))),
                 hintText: "Comment ",
-                prefixIcon: Icon(Icons.security_rounded),
+                prefixIcon: Icon(Icons.comment),
               ),
             ),
           ),
