@@ -158,7 +158,10 @@ class RequestHelper {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Text("A+", style: Styles.large2),
+                      Text(
+                        "A+",
+                        style: Styles.small,
+                      ),
                       SizedBox(
                         height: 15,
                       ),
