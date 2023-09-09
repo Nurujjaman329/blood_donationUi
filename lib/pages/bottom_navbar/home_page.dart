@@ -1,7 +1,7 @@
 import 'package:firstapp/drawerpage/drawer_page.dart';
-import 'package:firstapp/mainpage/bottom_navbar/patient_req.dart';
-import 'package:firstapp/mainpage/mainpage_button/find_donorpage.dart';
-import 'package:firstapp/mainpage/mainpage_button/top_donors.dart';
+import 'package:firstapp/pages/bottom_navbar/patient_req/patient_req.dart';
+import 'package:firstapp/pages/mainpage_button/find_donorpage.dart';
+import 'package:firstapp/pages/mainpage_button/top_donors.dart';
 import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             CircleAvatar(child: Image.asset("assets/images/mainpageimage.jpg")),
             Text(
-              "Scouts Blood Donation\n   Bangladesh Scouts",
+              " Scouts Blood Donation\n  Bangladesh Scouts",
               style: TextStyles.app_bar,
             ),
           ],

@@ -1,6 +1,5 @@
 import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/text_style.dart';
-import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -65,11 +64,14 @@ class _ReceivedPageState extends State<ReceivedPage> {
                     ),
                     trailing: Column(
                       children: [
-                        Text(
-                          "null",
-                          style: Styles.small,
+                        Text("B+", style: Styles.large2),
+                        SizedBox(
+                          height: 15,
                         ),
-                        Icon(Icons.call)
+                        Icon(
+                          Icons.call,
+                          size: 20,
+                        ),
                       ],
                     ),
                   ),

@@ -1,5 +1,4 @@
 import 'package:firstapp/registerpage/registration_page.dart';
-import 'package:firstapp/utils/button_custom.dart';
 import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/sized_box.dart';
 import 'package:firstapp/utils/textstyle_static.dart';

@@ -25,4 +25,5 @@ class Styles {
     fontSize: 16,
     //color: Colors.black,
   );
+  static TextStyle large2 = TextStyle(fontSize: 22);
 }
