@@ -10,7 +10,9 @@ class TermsConditionPage extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: ColorCode.primary_color,
-        iconTheme: IconThemeData(color: ColorCode.white),
+        iconTheme: IconThemeData(
+          color: ColorCode.background_color,
+        ),
         title: Text(
           " Terms & Conditions  ",
         ),

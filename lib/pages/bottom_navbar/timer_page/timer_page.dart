@@ -25,7 +25,7 @@ class _TimerPageState extends State<TimerPage> {
               padding: EdgeInsets.all(8.0),
               child: Icon(
                 Icons.notification_add_rounded,
-                color: ColorCode.white,
+                color: ColorCode.background_color,
                 size: 40,
               ),
             )
@@ -35,7 +35,7 @@ class _TimerPageState extends State<TimerPage> {
               child: Text(
                 "Donated",
                 style: TextStyle(
-                  color: ColorCode.white,
+                  color: ColorCode.background_color,
                 ),
               ),
             ),
@@ -43,7 +43,7 @@ class _TimerPageState extends State<TimerPage> {
               child: Text(
                 "Received",
                 style: TextStyle(
-                  color: ColorCode.white,
+                  color: ColorCode.background_color,
                 ),
               ),
             ),

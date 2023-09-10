@@ -10,7 +10,9 @@ class PrivacySecurityPage extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: ColorCode.primary_color,
-        iconTheme: const IconThemeData(color: ColorCode.white),
+        iconTheme: const IconThemeData(
+          color: ColorCode.background_color,
+        ),
         title: const Text("Privacy & Security "),
         actions: const [
           Padding(

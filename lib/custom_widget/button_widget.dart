@@ -12,7 +12,7 @@ Widget custom_button(String text) {
       style: TextStyles.signOut,
     ),
     decoration: BoxDecoration(
-      color: ColorCode.card_button,
+      color: ColorCode.background_color,
       borderRadius: BorderRadius.circular(10.0),
       border: const Border(
         top: BorderSide(

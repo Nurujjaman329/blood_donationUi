@@ -1,6 +1,4 @@
 import 'package:firstapp/utils/fontstyle.dart';
-import 'package:firstapp/utils/text_style.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class TopDonorCustom {
@@ -12,14 +10,14 @@ class TopDonorCustom {
       shadowColor: Colors.black,
       color: Colors.white,
       child: Padding(
-        padding: EdgeInsets.only(left: 3, bottom: 8, top: 8),
+        padding: const EdgeInsets.only(left: 3, bottom: 8, top: 8),
         child: Column(
           children: [
             Row(
               children: [
                 SizedBox(
                   width: _width * .20,
-                  child: CircleAvatar(
+                  child: const CircleAvatar(
                     radius: 30,
                   ),
                 ),
@@ -30,48 +28,48 @@ class TopDonorCustom {
                       children: [
                         SizedBox(
                           width: _width * .27,
-                          child: Text("Top Donor Name"),
+                          child: const Text("Top Donor Name"),
                         ),
-                        Text(": "),
+                        const Text(": "),
                         SizedBox(
                           width: _width * .31,
-                          child: Text("Md Nurujjaman"),
+                          child: const Text("Md Nurujjaman"),
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Row(
                       children: [
                         SizedBox(
                           width: _width * .27,
-                          child: Text("Phone Number"),
+                          child: const Text("Phone Number"),
                         ),
-                        Text(": "),
+                        const Text(": "),
                         SizedBox(
                           width: _width * .31,
-                          child: Text("01957073942"),
+                          child: const Text("01957073942"),
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Row(
                       children: [
                         SizedBox(
                           width: _width * .27,
-                          child: Text("Gender"),
+                          child: const Text("Gender"),
                         ),
-                        Text(": "),
+                        const Text(": "),
                         SizedBox(
                           width: _width * .31,
-                          child: Text("male"),
+                          child: const Text("male"),
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                   ],
@@ -84,10 +82,10 @@ class TopDonorCustom {
                         "A+",
                         style: Style.average,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 15,
                       ),
-                      Icon(
+                      const Icon(
                         Icons.call,
                         size: 30,
                       ),

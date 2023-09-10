@@ -20,7 +20,7 @@ class Style {
 
   static TextStyle extrasmaller700w = const TextStyle(
       fontSize: 17,
-      color: ColorCode.white,
+      color: ColorCode.background_color,
       fontFamily: "Roboto",
       fontWeight: FontWeight.w500);
 

@@ -24,7 +24,7 @@ class _DecisionPageState extends State<DecisionPage> {
               padding: EdgeInsets.all(8.0),
               child: Icon(
                 Icons.notification_add_rounded,
-                color: ColorCode.white,
+                color: ColorCode.background_color,
                 size: 40,
               ),
             )
@@ -34,7 +34,7 @@ class _DecisionPageState extends State<DecisionPage> {
               child: Text(
                 "Pending||Accepted",
                 style: TextStyle(
-                  color: ColorCode.white,
+                  color: ColorCode.background_color,
                 ),
               ),
             ),
@@ -42,7 +42,7 @@ class _DecisionPageState extends State<DecisionPage> {
               child: Text(
                 "Accepted",
                 style: TextStyle(
-                  color: ColorCode.white,
+                  color: ColorCode.background_color,
                 ),
               ),
             ),

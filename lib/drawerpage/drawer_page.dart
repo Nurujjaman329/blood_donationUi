@@ -22,12 +22,14 @@ class _MyDrawerState extends State<MyDrawer> {
         child: Column(
           // scrollDirection: Axis.vertical,
           children: [
-            DrawerHeader(
+            const DrawerHeader(
               decoration: BoxDecoration(
-                color: ColorCode.white,
+                color: ColorCode.background_color,
               ),
               child: UserAccountsDrawerHeader(
-                decoration: BoxDecoration(color: ColorCode.white),
+                decoration: BoxDecoration(
+                  color: ColorCode.background_color,
+                ),
                 accountName: Text(
                   "Md Nurujjaman",
                   style: TextStyle(fontSize: 18, color: Colors.black),
@@ -46,31 +48,31 @@ class _MyDrawerState extends State<MyDrawer> {
                 ),
               ),
             ),
-            Divider(
+            const Divider(
               color: ColorCode.text_color,
               thickness: 3,
             ),
             ListTile(
-              title: Text('I Want To Donate '),
+              title: const Text('I Want To Donate '),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
             ListTile(
-              title: Text("Home Page"),
-              trailing: Icon(Icons.arrow_forward),
+              title: const Text("Home Page"),
+              trailing: const Icon(Icons.arrow_forward),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
             ListTile(
               title: const Text(' Change Password '),
-              trailing: Icon(Icons.arrow_forward),
+              trailing: const Icon(Icons.arrow_forward),
               onTap: () {
                 showDialog(
                     context: context,
                     builder: (context) {
-                      return Dialog(
+                      return const Dialog(
                         child: DialogPage(),
                       );
                     });
@@ -78,12 +80,12 @@ class _MyDrawerState extends State<MyDrawer> {
             ),
             ListTile(
               title: const Text(' User Feed Back '),
-              trailing: Icon(Icons.arrow_forward),
+              trailing: const Icon(Icons.arrow_forward),
               onTap: () {
                 showDialog(
                     context: context,
                     builder: (context) {
-                      return Dialog(
+                      return const Dialog(
                         child: UserFeedBack(),
                       );
                     });
@@ -91,43 +93,43 @@ class _MyDrawerState extends State<MyDrawer> {
             ),
             ListTile(
               title: const Text(' Privacy & Security '),
-              trailing: Icon(Icons.arrow_forward),
+              trailing: const Icon(Icons.arrow_forward),
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => PrivacySecurityPage(),
+                    builder: (context) => const PrivacySecurityPage(),
                   ),
                 );
               },
             ),
             ListTile(
               title: const Text('Terms & Condition'),
-              trailing: Icon(Icons.arrow_forward),
+              trailing: const Icon(Icons.arrow_forward),
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => TermsConditionPage(),
+                    builder: (context) => const TermsConditionPage(),
                   ),
                 );
               },
             ),
-            Divider(
+            const Divider(
               color: ColorCode.text_color,
               thickness: 3,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Container(
               alignment: Alignment.center,
               height: 50,
               width: 100,
-              child: Text(
+              child: const Text(
                 "SignOut",
                 style: TextStyles.signOut,
               ),

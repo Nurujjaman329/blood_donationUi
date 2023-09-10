@@ -15,14 +15,14 @@ class _PatientReqState extends State<PatientReq> {
     return Scaffold(
       appBar: AppBar(
         iconTheme: const IconThemeData(
-          color: ColorCode.white,
+          color: ColorCode.background_color,
         ),
         elevation: 0,
         backgroundColor: ColorCode.primary_color,
         title: const Text(
           "Patient Request",
           style: TextStyle(
-            color: ColorCode.white,
+            color: ColorCode.background_color,
           ),
         ),
         actions: const [

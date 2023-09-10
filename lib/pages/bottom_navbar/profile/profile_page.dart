@@ -17,14 +17,14 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       appBar: AppBar(
         iconTheme: const IconThemeData(
-          color: ColorCode.white,
+          color: ColorCode.background_color,
         ),
         elevation: 0,
         backgroundColor: ColorCode.primary_color,
         title: const Text(
           "Profile",
           style: TextStyle(
-            color: ColorCode.white,
+            color: ColorCode.background_color,
           ),
         ),
         actions: const [
@@ -32,7 +32,7 @@ class _ProfilePageState extends State<ProfilePage> {
             padding: EdgeInsets.all(8.0),
             child: Icon(
               Icons.notification_add_rounded,
-              color: ColorCode.white,
+              color: ColorCode.background_color,
               size: 40,
             ),
           )
