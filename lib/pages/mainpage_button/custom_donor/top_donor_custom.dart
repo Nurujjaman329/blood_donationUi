@@ -1,3 +1,4 @@
+import 'package:firstapp/utils/fontstyle.dart';
 import 'package:firstapp/utils/text_style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -81,7 +82,7 @@ class TopDonorCustom {
                     children: [
                       Text(
                         "A+",
-                        style: Styles.small,
+                        style: Style.average,
                       ),
                       SizedBox(
                         height: 15,

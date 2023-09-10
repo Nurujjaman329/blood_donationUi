@@ -1,4 +1,4 @@
-import 'package:firstapp/utils/text_style.dart';
+import 'package:firstapp/utils/fontstyle.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../utils/color_static.dart';
@@ -160,7 +160,7 @@ class RequestHelper {
                     children: [
                       Text(
                         "A+",
-                        style: Styles.small,
+                        style: Style.average,
                       ),
                       SizedBox(
                         height: 15,

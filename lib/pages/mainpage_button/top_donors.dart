@@ -1,4 +1,5 @@
 import 'package:firstapp/pages/mainpage_button/custom_donor/top_donor_custom.dart';
+import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +18,7 @@ class _TopDonorState extends State<TopDonor> {
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.black),
         elevation: 0,
-        backgroundColor: Colors.white,
+        backgroundColor: ColorCode.primary_color,
         title: Text(
           "Top Donor",
           style: TextStyles.app_bar,

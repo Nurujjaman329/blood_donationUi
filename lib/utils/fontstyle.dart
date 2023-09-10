@@ -23,4 +23,10 @@ class Style {
       color: ColorCode.white,
       fontFamily: "Roboto",
       fontWeight: FontWeight.w500);
+
+  static TextStyle average = const TextStyle(
+      fontSize: 17,
+      color: ColorCode.primary_color,
+      fontFamily: "Roboto",
+      fontWeight: FontWeight.w500);
 }
