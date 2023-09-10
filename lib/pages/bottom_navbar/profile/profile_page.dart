@@ -1,4 +1,5 @@
 import 'package:firstapp/utils/color_static.dart';
+import 'package:firstapp/utils/fontstyle.dart';
 
 import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/cupertino.dart';
@@ -17,32 +18,36 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(
+          color: ColorCode.white,
+        ),
         elevation: 0,
-        backgroundColor: Colors.white,
+        backgroundColor: ColorCode.primary_color,
         title: const Text(
           "Profile",
-          style: TextStyles.app_bar,
+          style: TextStyle(
+            color: ColorCode.white,
+          ),
         ),
-        actions: [
+        actions: const [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(8.0),
             child: Icon(
               Icons.notification_add_rounded,
-              color: ColorCode.appbar_back,
+              color: ColorCode.white,
               size: 40,
             ),
           )
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               "  Notification",
-              style: TextStyles.app_bar,
+              style: Style.extrasmaller600w,
             ),
             Card(
               // elevation: 30,
@@ -53,7 +58,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.all(8.0),
                       child: Text("App Notification"),
                     ),
@@ -68,14 +73,14 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Text(
               "  Account Information ",
-              style: TextStyles.app_bar,
+              style: Style.extrasmaller600w,
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(5.0),
               child: Card(
                 // elevation: 30,
@@ -97,7 +102,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       height: 4,
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(2.0),
+                      padding: EdgeInsets.all(2.0),
                       child: Text(
                           "Email                       : mdnurujjaman329@gmail.com"),
                     ),
@@ -133,14 +138,14 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Text(
               "  Account Information ",
-              style: TextStyles.app_bar,
+              style: Style.extrasmaller600w,
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(5.0),
               child: Card(
                 // elevation: 30,

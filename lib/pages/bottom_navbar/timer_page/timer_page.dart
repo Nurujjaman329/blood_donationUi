@@ -18,28 +18,39 @@ class _TimerPageState extends State<TimerPage> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: ColorCode.primary_color,
           elevation: 0,
-          actions: [
+          title: const Text("Timer"),
+          actions: const [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(8.0),
               child: Icon(
                 Icons.notification_add_rounded,
-                color: ColorCode.appbar_back,
+                color: ColorCode.white,
                 size: 40,
               ),
             )
           ],
-          bottom: TabBar(tabs: [
+          bottom: const TabBar(tabs: [
             Tab(
-              child: Text("Donated", style: Styles.average),
+              child: Text(
+                "Donated",
+                style: TextStyle(
+                  color: ColorCode.white,
+                ),
+              ),
             ),
             Tab(
-              child: Text("Received", style: Styles.average),
+              child: Text(
+                "Received",
+                style: TextStyle(
+                  color: ColorCode.white,
+                ),
+              ),
             ),
           ]),
         ),
-        body: TabBarView(children: [
+        body: const TabBarView(children: [
           DonatedPage(),
           ReceivedPage(),
         ]),

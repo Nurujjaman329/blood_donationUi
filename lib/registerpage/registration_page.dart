@@ -10,6 +10,16 @@ class RegistrationPage extends StatefulWidget {
 }
 
 class _RegistrationPageState extends State<RegistrationPage> {
+  String dropdownvalue = 'Khulna';
+
+  // List of items in our dropdown menu
+  var items = [
+    'Khulna',
+    'Dhaka',
+    'Item 3',
+    'Item 4',
+    'Item 5',
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +43,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 padding: const EdgeInsets.all(8.0),
                 child: TextFormField(
                   textInputAction: TextInputAction.done,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(
                       borderSide: BorderSide(color: ColorCode.button_color),
                       borderRadius: BorderRadius.all(
@@ -57,7 +67,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 padding: const EdgeInsets.all(8.0),
                 child: TextFormField(
                   textInputAction: TextInputAction.done,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(
                       borderSide: BorderSide(color: ColorCode.button_color),
                       borderRadius: BorderRadius.all(
@@ -76,6 +86,31 @@ class _RegistrationPageState extends State<RegistrationPage> {
               ),
               SizedBox(
                 height: MediaQuery.of(context).size.height * .01,
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width * .50,
+                child: DropdownButton(
+                  // Initial Value
+                  value: dropdownvalue,
+
+                  // Down Arrow Icon
+                  icon: const Icon(Icons.keyboard_arrow_down),
+
+                  // Array list of items
+                  items: items.map((String items) {
+                    return DropdownMenuItem(
+                      value: items,
+                      child: Text(items),
+                    );
+                  }).toList(),
+                  // After selecting the desired option,it will
+                  // change button value to selected value
+                  onChanged: (String? newValue) {
+                    setState(() {
+                      dropdownvalue = newValue!;
+                    });
+                  },
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),

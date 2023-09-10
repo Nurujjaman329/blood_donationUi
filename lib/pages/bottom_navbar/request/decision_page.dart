@@ -1,7 +1,6 @@
 import 'package:firstapp/pages/bottom_navbar/request/accepted_page.dart';
 import 'package:firstapp/pages/bottom_navbar/request/pending_page.dart';
 import 'package:firstapp/utils/color_static.dart';
-import 'package:firstapp/utils/text_style.dart';
 import 'package:flutter/material.dart';
 
 class DecisionPage extends StatefulWidget {
@@ -18,28 +17,38 @@ class _DecisionPageState extends State<DecisionPage> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: ColorCode.primary_color,
           elevation: 0,
-          actions: [
+          actions: const [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: EdgeInsets.all(8.0),
               child: Icon(
                 Icons.notification_add_rounded,
-                color: ColorCode.appbar_back,
+                color: ColorCode.white,
                 size: 40,
               ),
             )
           ],
-          bottom: TabBar(tabs: [
+          bottom: const TabBar(tabs: [
             Tab(
-              child: Text("Pending||Accepted", style: Styles.average),
+              child: Text(
+                "Pending||Accepted",
+                style: TextStyle(
+                  color: ColorCode.white,
+                ),
+              ),
             ),
             Tab(
-              child: Text("Accepted", style: Styles.average),
+              child: Text(
+                "Accepted",
+                style: TextStyle(
+                  color: ColorCode.white,
+                ),
+              ),
             ),
           ]),
         ),
-        body: TabBarView(children: [
+        body: const TabBarView(children: [
           PendingPage(),
           AcceptedPage(),
         ]),

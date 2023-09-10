@@ -4,8 +4,6 @@ import 'package:firstapp/pages/bottom_navbar/home_page.dart';
 import 'package:firstapp/pages/bottom_navbar/profile/profile_page.dart';
 import 'package:firstapp/pages/bottom_navbar/timer_page/timer_page.dart';
 import 'package:firstapp/utils/color_static.dart';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
@@ -19,11 +17,11 @@ class _MainPageState extends State<MainPage> {
   var _pageIndex = 0;
 
   final List<Widget> _pages = [
-    HomePage(),
-    DecisionPage(),
-    PatientReq(),
-    TimerPage(),
-    ProfilePage(),
+    const HomePage(),
+    const DecisionPage(),
+    const PatientReq(),
+    const TimerPage(),
+    const ProfilePage(),
   ];
 
   @override
@@ -31,7 +29,7 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         // type: BottomNavigationBarType.fixed,
-        unselectedItemColor: Color.fromARGB(255, 119, 115, 115),
+        unselectedItemColor: const Color.fromARGB(255, 119, 115, 115),
         selectedItemColor: ColorCode.button_color,
         currentIndex: _pageIndex,
         onTap: (value) {
@@ -39,7 +37,7 @@ class _MainPageState extends State<MainPage> {
             _pageIndex = value;
           });
         },
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',

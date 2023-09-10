@@ -1,6 +1,5 @@
 import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/text_style.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class RequestHelper1 {
@@ -8,18 +7,18 @@ class RequestHelper1 {
     // var _height = MediaQuery.of(context).size.height;
     var _width = MediaQuery.of(context).size.width;
     return Card(
-      elevation: 7,
+      elevation: 4,
       shadowColor: Colors.black,
       color: Colors.white,
       child: Padding(
-        padding: EdgeInsets.only(left: 3, bottom: 8, top: 8),
+        padding: const EdgeInsets.only(left: 3, bottom: 8, top: 8),
         child: Column(
           children: [
             Row(
               children: [
                 SizedBox(
                   width: _width * .20,
-                  child: CircleAvatar(
+                  child: const CircleAvatar(
                     radius: 30,
                   ),
                 ),
@@ -29,48 +28,48 @@ class RequestHelper1 {
                       children: [
                         SizedBox(
                           width: _width * .27,
-                          child: Text("Receiver Name"),
+                          child: const Text("Receiver Name"),
                         ),
-                        Text(": "),
+                        const Text(": "),
                         SizedBox(
                           width: _width * .31,
-                          child: Text("Md Nurujjaman"),
+                          child: const Text("Md Nurujjaman"),
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Row(
                       children: [
                         SizedBox(
                           width: _width * .27,
-                          child: Text("Phone Number"),
+                          child: const Text("Phone Number"),
                         ),
-                        Text(": "),
+                        const Text(": "),
                         SizedBox(
                           width: _width * .31,
-                          child: Text("01957073942"),
+                          child: const Text("01957073942"),
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Row(
                       children: [
                         SizedBox(
                           width: _width * .27,
-                          child: Text("Gender"),
+                          child: const Text("Gender"),
                         ),
-                        Text(": "),
+                        const Text(": "),
                         SizedBox(
                           width: _width * .31,
-                          child: Text("male"),
+                          child: const Text("male"),
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Row(
@@ -78,7 +77,7 @@ class RequestHelper1 {
                       children: [
                         SizedBox(
                           width: _width * .60,
-                          child: Text(
+                          child: const Text(
                             "Donated",
                             style: TextStyle(color: ColorCode.green),
                           ),
@@ -95,10 +94,10 @@ class RequestHelper1 {
                         "A+",
                         style: Styles.small,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 15,
                       ),
-                      Icon(
+                      const Icon(
                         Icons.call,
                         size: 30,
                       ),
@@ -112,14 +111,14 @@ class RequestHelper1 {
               children: [
                 TextButton(
                   onPressed: () {},
-                  child: Text("Claim"),
+                  child: const Text("Claim"),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text("Cancel"),
+                  child: const Text("Cancel"),
                 ),
               ],
             ),

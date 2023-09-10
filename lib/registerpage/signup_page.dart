@@ -1,6 +1,7 @@
 import 'package:firstapp/registerpage/login_page.dart';
 import 'package:firstapp/registerpage/phone_verification.dart';
 import 'package:firstapp/utils/color_static.dart';
+import 'package:firstapp/utils/fontstyle.dart';
 import 'package:firstapp/utils/image_static.dart';
 import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/material.dart';
@@ -22,8 +23,11 @@ class _SignUpPageState extends State<SignUpPage> {
         backgroundColor: ColorCode.primary_color,
         centerTitle: true,
         //actions: [Icon(Icons.)],
-        iconTheme: IconThemeData(color: Colors.black),
-        title: Text("Continue With Phone ", style: TextStyles.app_bar),
+        iconTheme: IconThemeData(color: Colors.white),
+        title: Text(
+          "Continue With Phone ",
+          style: Style.extrasmaller700w,
+        ),
         //leading: Icon(Icons.arrow_back, color: Colors.black),
       ),
       body: Container(

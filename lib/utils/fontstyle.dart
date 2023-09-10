@@ -12,14 +12,14 @@ class Style {
       color: ColorCode.text_color,
       fontFamily: "Roboto",
       fontWeight: FontWeight.w400);
-  static TextStyle extrasmaller600w = TextStyle(
-      fontSize: 14,
-      color: ColorCode.text_color,
-      fontFamily: "Roboto",
-      fontWeight: FontWeight.w400);
+  static TextStyle extrasmaller600w = const TextStyle(
+    fontSize: 17,
+    fontFamily: "Roboto",
+    fontWeight: FontWeight.bold,
+  );
 
-  static TextStyle extrasmaller700w = TextStyle(
-      fontSize: 20,
+  static TextStyle extrasmaller700w = const TextStyle(
+      fontSize: 17,
       color: ColorCode.white,
       fontFamily: "Roboto",
       fontWeight: FontWeight.w500);

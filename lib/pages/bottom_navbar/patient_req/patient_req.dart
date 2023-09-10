@@ -1,4 +1,5 @@
 import 'package:firstapp/pages/bottom_navbar/request/helper/helper_pending.dart';
+import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -15,14 +16,23 @@ class _PatientReqState extends State<PatientReq> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.black),
-        elevation: 0,
-        backgroundColor: Colors.white,
-        title: Text(
-          "Patient Request",
-          style: TextStyles.app_bar,
+        iconTheme: const IconThemeData(
+          color: ColorCode.white,
         ),
-        actions: [Icon(Icons.ring_volume_rounded)],
+        elevation: 0,
+        backgroundColor: ColorCode.primary_color,
+        title: const Text(
+          "Patient Request",
+          style: TextStyle(
+            color: ColorCode.white,
+          ),
+        ),
+        actions: const [
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: Icon(Icons.ring_volume_rounded),
+          )
+        ],
       ),
       body: ListView.builder(
           itemCount: 5,
