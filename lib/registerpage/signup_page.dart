@@ -26,7 +26,7 @@ class _SignUpPageState extends State<SignUpPage> {
         iconTheme: IconThemeData(color: Colors.white),
         title: Text(
           "Continue With Phone ",
-          style: Style.extrasmaller700w,
+          style: Style.extrasmallerw17,
         ),
         //leading: Icon(Icons.arrow_back, color: Colors.black),
       ),

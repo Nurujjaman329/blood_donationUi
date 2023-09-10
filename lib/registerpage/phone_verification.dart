@@ -21,7 +21,7 @@ class VerifyPage extends StatelessWidget {
         centerTitle: true,
         title: Text(
           "Verify Phone",
-          style: Style.extrasmaller700w,
+          style: Style.extrasmallerw17,
         ),
       ),
       body: SafeArea(

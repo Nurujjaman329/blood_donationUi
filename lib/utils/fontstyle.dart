@@ -18,7 +18,7 @@ class Style {
     fontWeight: FontWeight.bold,
   );
 
-  static TextStyle extrasmaller700w = const TextStyle(
+  static TextStyle extrasmallerw17 = const TextStyle(
       fontSize: 17,
       color: ColorCode.background_color,
       fontFamily: "Roboto",

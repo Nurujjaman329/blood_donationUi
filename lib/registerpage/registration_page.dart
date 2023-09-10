@@ -31,7 +31,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
         backgroundColor: ColorCode.primary_color,
         title: Text(
           "Registration",
-          style: Style.extrasmaller700w,
+          style: Style.extrasmallerw17,
         ),
       ),
       body: Padding(

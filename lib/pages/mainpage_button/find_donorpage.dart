@@ -20,7 +20,7 @@ class _FindDonorPageState extends State<FindDonorPage> {
         backgroundColor: ColorCode.primary_color,
         title: Text(
           "Find Donor",
-          style: Style.extrasmaller700w,
+          style: Style.extrasmallerw17,
         ),
         actions: [
           const Padding(

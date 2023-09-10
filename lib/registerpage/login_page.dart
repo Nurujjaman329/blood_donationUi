@@ -18,38 +18,38 @@ class LoginPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                 Image.asset(
                   imagespath.login_page,
                   scale: 10,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Text(
                   "Bangladesh Scouts",
                   style: Style.extrasmaller600w,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Text(
+                const Text(
                   "Blood Bank",
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     textInputAction: TextInputAction.done,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       border: OutlineInputBorder(
                         borderSide: BorderSide(color: ColorCode.primary_color),
                         borderRadius: BorderRadius.all(
@@ -67,14 +67,14 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     textInputAction: TextInputAction.done,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       border: OutlineInputBorder(
                         borderSide: BorderSide(color: ColorCode.primary_color),
                         borderRadius: BorderRadius.all(
@@ -94,41 +94,46 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => MainPage()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const MainPage()));
                   },
                   child: Container(
                     width: 350,
                     height: 50,
                     alignment: Alignment.center,
-                    child: Text("Sign In"),
-                    decoration: BoxDecoration(
+                    child: Text(
+                      "Sign In",
+                      style: Style.extrasmallerw17,
+                    ),
+                    decoration: const BoxDecoration(
                         color: ColorCode.primary_color,
                         borderRadius: BorderRadius.all(Radius.circular(10.0))),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                InkWell(
+                const InkWell(
                   child: Text(
                     "Forget Password",
                     style: TextStyle(color: Colors.blueAccent),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Do not have an account?"),
-                    SizedBox(
+                    const Text("Do not have an account?"),
+                    const SizedBox(
                       width: 5,
                     ),
                     InkWell(
@@ -136,9 +141,9 @@ class LoginPage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => SignUpPage()));
+                                builder: (context) => const SignUpPage()));
                       },
-                      child: Text(
+                      child: const Text(
                         "SignUp",
                         style: TextStyle(color: Colors.red),
                       ),

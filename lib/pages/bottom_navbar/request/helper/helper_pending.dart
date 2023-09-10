@@ -186,7 +186,9 @@ class RequestHelper {
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text("Accept"),
+                  child: Text(
+                    "Accept",
+                  ),
                 ),
               ],
             ),

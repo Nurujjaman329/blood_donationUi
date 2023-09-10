@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
             CircleAvatar(child: Image.asset("assets/images/mainpageimage.jpg")),
             Text(
               " Scouts Blood Donation\n  Bangladesh Scouts",
-              style: Style.extrasmaller700w,
+              style: Style.extrasmallerw17,
             ),
           ],
         ),
