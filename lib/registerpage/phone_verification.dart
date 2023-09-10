@@ -82,10 +82,13 @@ class VerifyPage extends StatelessWidget {
                             builder: (context) => RegistrationPage()));
                   },
                   child: Container(
-                    width: 300,
+                    width: 320,
                     height: 50,
                     alignment: Alignment.center,
-                    child: Text("Verify"),
+                    child: Text(
+                      "Verify",
+                      style: Style.extrasmallerw17,
+                    ),
                     decoration: BoxDecoration(
                         color: ColorCode.primary_color,
                         borderRadius: BorderRadius.all(Radius.circular(10.0))),
@@ -100,7 +103,7 @@ class VerifyPage extends StatelessWidget {
                     children: [
                       Text(
                         "Didn't receive code?",
-                        style: Style.extrasmaller600w,
+                        style: Style.extrasmallerB17,
                       ),
                       Sizedmodifys.quswidth,
                       Text(

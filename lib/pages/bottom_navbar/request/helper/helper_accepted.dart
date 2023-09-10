@@ -19,6 +19,7 @@ class RequestHelper1 {
                 SizedBox(
                   width: _width * .20,
                   child: const CircleAvatar(
+                    backgroundColor: ColorCode.primary_color,
                     radius: 30,
                   ),
                 ),

@@ -82,7 +82,10 @@ class _SignUpPageState extends State<SignUpPage> {
                   width: 350,
                   height: 50,
                   alignment: Alignment.center,
-                  child: Text("Continue"),
+                  child: Text(
+                    "Continue",
+                    style: Style.extrasmallerw17,
+                  ),
                   decoration: BoxDecoration(
                       color: ColorCode.primary_color,
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),

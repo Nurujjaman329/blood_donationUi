@@ -23,6 +23,11 @@ class Style {
       color: ColorCode.background_color,
       fontFamily: "Roboto",
       fontWeight: FontWeight.w500);
+  static TextStyle extrasmallerB17 = const TextStyle(
+    fontSize: 17,
+    fontFamily: "Roboto",
+    fontWeight: FontWeight.w500,
+  );
 
   static TextStyle average = const TextStyle(
       fontSize: 17,
