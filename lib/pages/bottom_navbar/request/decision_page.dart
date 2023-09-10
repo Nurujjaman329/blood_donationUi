@@ -1,6 +1,7 @@
 import 'package:firstapp/pages/bottom_navbar/request/accepted_page.dart';
 import 'package:firstapp/pages/bottom_navbar/request/pending_page.dart';
 import 'package:firstapp/utils/color_static.dart';
+import 'package:firstapp/utils/fontstyle.dart';
 import 'package:flutter/material.dart';
 
 class DecisionPage extends StatefulWidget {
@@ -17,6 +18,10 @@ class _DecisionPageState extends State<DecisionPage> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
+          title: Text(
+            "Decision Page",
+            style: Style.extrasmaller600w,
+          ),
           backgroundColor: ColorCode.primary_color,
           elevation: 0,
           actions: const [

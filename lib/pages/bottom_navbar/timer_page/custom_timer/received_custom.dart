@@ -18,6 +18,7 @@ class TimerCard1 {
             SizedBox(
               width: _width * .20,
               child: CircleAvatar(
+                backgroundColor: ColorCode.primary_color,
                 radius: 30,
               ),
             ),
