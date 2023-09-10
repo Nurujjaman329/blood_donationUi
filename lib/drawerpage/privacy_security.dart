@@ -8,12 +8,13 @@ class PrivacySecurityPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: ColorCode.appbar_color2,
-        iconTheme: IconThemeData(color: ColorCode.appbar_back),
-        title: Text("Privacy & Security "),
-        actions: [
+        elevation: 0,
+        backgroundColor: ColorCode.primary_color,
+        iconTheme: const IconThemeData(color: ColorCode.white),
+        title: const Text("Privacy & Security "),
+        actions: const [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(8.0),
             child: Icon(
               Icons.notification_add_outlined,
               size: 35,

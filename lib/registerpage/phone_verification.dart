@@ -87,7 +87,7 @@ class VerifyPage extends StatelessWidget {
                     alignment: Alignment.center,
                     child: Text("Verify"),
                     decoration: BoxDecoration(
-                        color: ColorCode.button_color,
+                        color: ColorCode.primary_color,
                         borderRadius: BorderRadius.all(Radius.circular(10.0))),
                   ),
                 ),

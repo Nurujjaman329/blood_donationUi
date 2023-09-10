@@ -25,7 +25,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.white,
         ),
         backgroundColor: ColorCode.primary_color,
@@ -45,7 +45,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                   textInputAction: TextInputAction.done,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(
-                      borderSide: BorderSide(color: ColorCode.button_color),
+                      borderSide: BorderSide(color: ColorCode.primary_color),
                       borderRadius: BorderRadius.all(
                         Radius.circular(20.0),
                       ),
@@ -69,7 +69,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                   textInputAction: TextInputAction.done,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(
-                      borderSide: BorderSide(color: ColorCode.button_color),
+                      borderSide: BorderSide(color: ColorCode.primary_color),
                       borderRadius: BorderRadius.all(
                         Radius.circular(20.0),
                       ),
@@ -116,15 +116,20 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 padding: const EdgeInsets.all(8.0),
                 child: TextFormField(
                   textInputAction: TextInputAction.done,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(
-                      borderSide: BorderSide(color: ColorCode.button_color),
+                      borderSide: BorderSide(
+                        color: ColorCode.primary_color,
+                      ),
                       borderRadius: BorderRadius.all(
                         Radius.circular(20.0),
                       ),
                     ),
                     focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: ColorCode.primary_color)),
+                      borderSide: BorderSide(
+                        color: ColorCode.primary_color,
+                      ),
+                    ),
                     hintText: "Password ",
                     prefixIcon: Icon(
                       Icons.lock,

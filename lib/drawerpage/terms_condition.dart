@@ -8,8 +8,9 @@ class TermsConditionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: ColorCode.appbar_color2,
-        iconTheme: IconThemeData(color: ColorCode.appbar_back),
+        elevation: 0,
+        backgroundColor: ColorCode.primary_color,
+        iconTheme: IconThemeData(color: ColorCode.white),
         title: Text(
           " Terms & Conditions  ",
         ),

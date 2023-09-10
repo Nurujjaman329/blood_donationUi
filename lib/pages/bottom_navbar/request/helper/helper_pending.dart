@@ -21,7 +21,7 @@ class RequestHelper {
                 SizedBox(
                   width: wide * 0.17,
                   child: CircleAvatar(
-                    backgroundColor: ColorCode.appbar_back,
+                    backgroundColor: ColorCode.primary_color,
                     radius: 30,
                   ),
                 ),

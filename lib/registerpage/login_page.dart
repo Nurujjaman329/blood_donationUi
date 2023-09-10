@@ -51,7 +51,7 @@ class LoginPage extends StatelessWidget {
                     textInputAction: TextInputAction.done,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
-                        borderSide: BorderSide(color: ColorCode.button_color),
+                        borderSide: BorderSide(color: ColorCode.primary_color),
                         borderRadius: BorderRadius.all(
                           Radius.circular(20.0),
                         ),

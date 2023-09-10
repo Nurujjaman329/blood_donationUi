@@ -38,7 +38,7 @@ class _MyDrawerState extends State<MyDrawer> {
                 ),
                 currentAccountPictureSize: Size.square(50),
                 currentAccountPicture: CircleAvatar(
-                  backgroundColor: ColorCode.drawer_border,
+                  backgroundColor: ColorCode.primary_color,
                   child: Text(
                     "N",
                     style: TextStyle(fontSize: 30.0, color: Colors.white),
@@ -47,7 +47,7 @@ class _MyDrawerState extends State<MyDrawer> {
               ),
             ),
             Divider(
-              color: ColorCode.drawer_border,
+              color: ColorCode.text_color,
               thickness: 3,
             ),
             ListTile(
@@ -114,7 +114,7 @@ class _MyDrawerState extends State<MyDrawer> {
               },
             ),
             Divider(
-              color: ColorCode.drawer_border,
+              color: ColorCode.text_color,
               thickness: 3,
             ),
             SizedBox(

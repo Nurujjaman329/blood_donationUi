@@ -50,17 +50,17 @@ class _SignUpPageState extends State<SignUpPage> {
                 textInputAction: TextInputAction.done,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
-                    borderSide: BorderSide(color: ColorCode.button_color),
+                    borderSide: BorderSide(color: ColorCode.primary_color),
                     borderRadius: BorderRadius.all(
                       Radius.circular(20.0),
                     ),
                   ),
                   focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: ColorCode.button_color)),
+                      borderSide: BorderSide(color: ColorCode.primary_color)),
                   hintText: "01XXXXXXXXX ",
                   prefixIcon: Icon(
                     Icons.call,
-                    color: ColorCode.button_color,
+                    color: ColorCode.primary_color,
                   ),
                 ),
               ),
@@ -84,7 +84,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   alignment: Alignment.center,
                   child: Text("Continue"),
                   decoration: BoxDecoration(
-                      color: ColorCode.button_color,
+                      color: ColorCode.primary_color,
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),
                 ),
               ),
