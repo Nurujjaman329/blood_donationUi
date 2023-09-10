@@ -1,7 +1,6 @@
 import 'package:firstapp/pages/bottom_navbar/timer_page/donated_page.dart';
 import 'package:firstapp/pages/bottom_navbar/timer_page/received_page.dart';
 import 'package:firstapp/utils/color_static.dart';
-import 'package:firstapp/utils/text_style.dart';
 import 'package:flutter/material.dart';
 
 class TimerPage extends StatefulWidget {

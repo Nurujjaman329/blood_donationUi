@@ -1,7 +1,5 @@
 import 'package:firstapp/pages/bottom_navbar/request/helper/helper_pending.dart';
 import 'package:firstapp/utils/color_static.dart';
-import 'package:firstapp/utils/textstyle_static.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PatientReq extends StatefulWidget {

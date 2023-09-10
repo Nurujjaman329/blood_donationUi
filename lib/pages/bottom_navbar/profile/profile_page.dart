@@ -1,7 +1,5 @@
 import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/fontstyle.dart';
-
-import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -63,6 +61,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       child: Text("App Notification"),
                     ),
                     CupertinoSwitch(
+                        activeColor: ColorCode.primary_color,
                         value: _switch,
                         onChanged: (value) {
                           setState(() {
