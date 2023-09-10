@@ -22,7 +22,12 @@ class _TopDonorState extends State<TopDonor> {
           "Top Donor",
           style: TextStyles.app_bar,
         ),
-        actions: [Icon(Icons.ring_volume_rounded)],
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Icon(Icons.ring_volume_rounded),
+          )
+        ],
       ),
       body: ListView.builder(
           itemCount: 5,

@@ -1,4 +1,5 @@
-import 'package:firstapp/utils/textstyle_static.dart';
+import 'package:firstapp/utils/color_static.dart';
+import 'package:firstapp/utils/fontstyle.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationPage extends StatefulWidget {
@@ -15,12 +16,12 @@ class _RegistrationPageState extends State<RegistrationPage> {
       appBar: AppBar(
         elevation: 0,
         iconTheme: IconThemeData(
-          color: Colors.black,
+          color: Colors.white,
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: ColorCode.primary_color,
         title: Text(
           "Registration",
-          style: TextStyles.app_bar,
+          style: Style.extrasmaller700w,
         ),
       ),
       body: Padding(
@@ -28,19 +29,23 @@ class _RegistrationPageState extends State<RegistrationPage> {
         child: Container(
           child: Column(
             children: [
-              Container(
-                width: 350,
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: new BorderRadius.circular(10.0),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: TextFormField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: "Full Name",
-                      prefixIcon: Icon(Icons.man),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextFormField(
+                  textInputAction: TextInputAction.done,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(color: ColorCode.button_color),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20.0),
+                      ),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: ColorCode.primary_color)),
+                    hintText: "Full Name ",
+                    prefixIcon: Icon(
+                      Icons.man,
+                      color: ColorCode.primary_color,
                     ),
                   ),
                 ),
@@ -48,19 +53,23 @@ class _RegistrationPageState extends State<RegistrationPage> {
               SizedBox(
                 height: MediaQuery.of(context).size.height * .01,
               ),
-              Container(
-                width: 350,
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: new BorderRadius.circular(10.0),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: TextFormField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: "Email",
-                      prefixIcon: Icon(Icons.email),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextFormField(
+                  textInputAction: TextInputAction.done,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(color: ColorCode.button_color),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20.0),
+                      ),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: ColorCode.primary_color)),
+                    hintText: "Email ",
+                    prefixIcon: Icon(
+                      Icons.email,
+                      color: ColorCode.primary_color,
                     ),
                   ),
                 ),
@@ -68,19 +77,23 @@ class _RegistrationPageState extends State<RegistrationPage> {
               SizedBox(
                 height: MediaQuery.of(context).size.height * .01,
               ),
-              Container(
-                width: 350,
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: new BorderRadius.circular(10.0),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: TextFormField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: "Password",
-                      prefixIcon: Icon(Icons.lock),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextFormField(
+                  textInputAction: TextInputAction.done,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(color: ColorCode.button_color),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(20.0),
+                      ),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: ColorCode.primary_color)),
+                    hintText: "Password ",
+                    prefixIcon: Icon(
+                      Icons.lock,
+                      color: ColorCode.primary_color,
                     ),
                   ),
                 ),

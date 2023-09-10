@@ -1,6 +1,7 @@
 import 'package:firstapp/pages/mainpage.dart';
 import 'package:firstapp/registerpage/signup_page.dart';
 import 'package:firstapp/utils/color_static.dart';
+import 'package:firstapp/utils/fontstyle.dart';
 import 'package:firstapp/utils/image_static.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,10 @@ class LoginPage extends StatelessWidget {
                 SizedBox(
                   height: 10,
                 ),
-                Text("Bangladesh Scouts"),
+                Text(
+                  "Bangladesh Scouts",
+                  style: Style.extrasmaller600w,
+                ),
                 SizedBox(
                   height: 10,
                 ),
@@ -47,11 +51,19 @@ class LoginPage extends StatelessWidget {
                     textInputAction: TextInputAction.done,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
-                          borderSide: BorderSide(color: ColorCode.text_color),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(20.0))),
+                        borderSide: BorderSide(color: ColorCode.button_color),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(20.0),
+                        ),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(color: ColorCode.primary_color)),
                       hintText: "Phone Number ",
-                      prefixIcon: Icon(Icons.lock),
+                      prefixIcon: Icon(
+                        Icons.call,
+                        color: ColorCode.primary_color,
+                      ),
                     ),
                   ),
                 ),
@@ -59,16 +71,26 @@ class LoginPage extends StatelessWidget {
                   height: 10,
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: TextFormField(
                     textInputAction: TextInputAction.done,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
-                          borderSide: BorderSide(color: ColorCode.text_color),
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(20.0))),
+                        borderSide: BorderSide(color: ColorCode.primary_color),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(20.0),
+                        ),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: ColorCode.primary_color,
+                        ),
+                      ),
                       hintText: "Password",
-                      prefixIcon: Icon(Icons.lock),
+                      prefixIcon: Icon(
+                        Icons.lock,
+                        color: ColorCode.primary_color,
+                      ),
                     ),
                   ),
                 ),
@@ -86,7 +108,7 @@ class LoginPage extends StatelessWidget {
                     alignment: Alignment.center,
                     child: Text("Sign In"),
                     decoration: BoxDecoration(
-                        color: ColorCode.button_color,
+                        color: ColorCode.primary_color,
                         borderRadius: BorderRadius.all(Radius.circular(10.0))),
                   ),
                 ),

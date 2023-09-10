@@ -20,4 +20,8 @@ class ColorCode {
   static const card_button = Colors.white;
 
   static const green = Colors.green;
+
+  static const primary_color = Colors.red;
+
+  static const background_color = Colors.white;
 }

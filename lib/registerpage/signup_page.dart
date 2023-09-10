@@ -19,7 +19,7 @@ class _SignUpPageState extends State<SignUpPage> {
       //backgroundColor: Colors.transparent,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.white,
+        backgroundColor: ColorCode.primary_color,
         centerTitle: true,
         //actions: [Icon(Icons.)],
         iconTheme: IconThemeData(color: Colors.black),
@@ -27,6 +27,7 @@ class _SignUpPageState extends State<SignUpPage> {
         //leading: Icon(Icons.arrow_back, color: Colors.black),
       ),
       body: Container(
+        color: ColorCode.background_color,
         width: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -39,19 +40,23 @@ class _SignUpPageState extends State<SignUpPage> {
             SizedBox(
               height: 10,
             ),
-            Container(
-              width: 350,
-              decoration: BoxDecoration(
-                color: Colors.grey,
-                borderRadius: new BorderRadius.circular(10.0),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: "01XXXXXXXXX",
-                    prefixIcon: Icon(Icons.phone),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextFormField(
+                textInputAction: TextInputAction.done,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(color: ColorCode.button_color),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(20.0),
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: ColorCode.button_color)),
+                  hintText: "01XXXXXXXXX ",
+                  prefixIcon: Icon(
+                    Icons.call,
+                    color: ColorCode.button_color,
                   ),
                 ),
               ),
@@ -79,6 +84,9 @@ class _SignUpPageState extends State<SignUpPage> {
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),
                 ),
               ),
+            ),
+            SizedBox(
+              height: 10,
             ),
             Text(
               "You'll receive a 4 digit code to verify next",
