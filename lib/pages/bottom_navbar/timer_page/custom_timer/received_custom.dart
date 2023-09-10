@@ -28,9 +28,15 @@ class TimerCard1 {
                   children: [
                     SizedBox(
                       width: _width * .27,
-                      child: Text("Donor Name"),
+                      child: Text(
+                        "Donor Name",
+                        style: Style.extrasmallerD14,
+                      ),
                     ),
-                    Text(": "),
+                    Text(
+                      ": ",
+                      style: Style.extrasmallerD14,
+                    ),
                     SizedBox(
                       width: _width * .31,
                       child: Text("Md Nurujjaman"),
@@ -44,9 +50,15 @@ class TimerCard1 {
                   children: [
                     SizedBox(
                       width: _width * .27,
-                      child: Text("Phone Number"),
+                      child: Text(
+                        "Phone Number",
+                        style: Style.extrasmallerD14,
+                      ),
                     ),
-                    Text(": "),
+                    Text(
+                      ": ",
+                      style: Style.extrasmallerD14,
+                    ),
                     SizedBox(
                       width: _width * .31,
                       child: Text("01957073942"),
@@ -60,9 +72,15 @@ class TimerCard1 {
                   children: [
                     SizedBox(
                       width: _width * .27,
-                      child: Text("Gender"),
+                      child: Text(
+                        "Gender",
+                        style: Style.extrasmallerD14,
+                      ),
                     ),
-                    Text(": "),
+                    Text(
+                      ": ",
+                      style: Style.extrasmallerD14,
+                    ),
                     SizedBox(
                       width: _width * .31,
                       child: Text("male"),

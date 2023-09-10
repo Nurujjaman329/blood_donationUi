@@ -1,4 +1,5 @@
 import 'package:firstapp/utils/color_static.dart';
+import 'package:firstapp/utils/fontstyle.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -27,9 +28,15 @@ class TimerCard {
                   children: [
                     SizedBox(
                       width: _width * .27,
-                      child: Text("Receiver Name"),
+                      child: Text(
+                        "Receiver Name",
+                        style: Style.extrasmallerD14,
+                      ),
                     ),
-                    Text(": "),
+                    Text(
+                      ": ",
+                      style: Style.extrasmallerD14,
+                    ),
                     SizedBox(
                       width: _width * .31,
                       child: Text("Md Nurujjaman"),
@@ -43,9 +50,15 @@ class TimerCard {
                   children: [
                     SizedBox(
                       width: _width * .27,
-                      child: Text("Phone Number"),
+                      child: Text(
+                        "Phone Number",
+                        style: Style.extrasmallerD14,
+                      ),
                     ),
-                    Text(": "),
+                    Text(
+                      ": ",
+                      style: Style.extrasmallerD14,
+                    ),
                     SizedBox(
                       width: _width * .31,
                       child: Text("01957073942"),
@@ -59,9 +72,15 @@ class TimerCard {
                   children: [
                     SizedBox(
                       width: _width * .27,
-                      child: Text("Gender"),
+                      child: Text(
+                        "Gender",
+                        style: Style.extrasmallerD14,
+                      ),
                     ),
-                    Text(": "),
+                    Text(
+                      ": ",
+                      style: Style.extrasmallerD14,
+                    ),
                     SizedBox(
                       width: _width * .31,
                       child: Text("male"),

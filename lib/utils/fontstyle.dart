@@ -23,6 +23,13 @@ class Style {
       color: ColorCode.background_color,
       fontFamily: "Roboto",
       fontWeight: FontWeight.w500);
+
+  static TextStyle extrasmallerD14 = const TextStyle(
+    fontSize: 14,
+    fontFamily: "Roboto",
+    fontWeight: FontWeight.bold,
+  );
+
   static TextStyle extrasmallerB17 = const TextStyle(
     fontSize: 17,
     fontFamily: "Roboto",

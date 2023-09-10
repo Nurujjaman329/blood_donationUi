@@ -29,9 +29,15 @@ class RequestHelper1 {
                       children: [
                         SizedBox(
                           width: _width * .27,
-                          child: const Text("Receiver Name"),
+                          child: Text(
+                            "Receiver Name",
+                            style: Style.extrasmallerD14,
+                          ),
                         ),
-                        const Text(": "),
+                        Text(
+                          ": ",
+                          style: Style.extrasmallerD14,
+                        ),
                         SizedBox(
                           width: _width * .31,
                           child: const Text("Md Nurujjaman"),
@@ -45,9 +51,15 @@ class RequestHelper1 {
                       children: [
                         SizedBox(
                           width: _width * .27,
-                          child: const Text("Phone Number"),
+                          child: Text(
+                            "Phone Number",
+                            style: Style.extrasmallerD14,
+                          ),
                         ),
-                        const Text(": "),
+                        Text(
+                          ": ",
+                          style: Style.extrasmallerD14,
+                        ),
                         SizedBox(
                           width: _width * .31,
                           child: const Text("01957073942"),
@@ -61,9 +73,15 @@ class RequestHelper1 {
                       children: [
                         SizedBox(
                           width: _width * .27,
-                          child: const Text("Gender"),
+                          child: Text(
+                            "Gender",
+                            style: Style.extrasmallerD14,
+                          ),
                         ),
-                        const Text(": "),
+                        Text(
+                          ": ",
+                          style: Style.extrasmallerD14,
+                        ),
                         SizedBox(
                           width: _width * .31,
                           child: const Text("male"),

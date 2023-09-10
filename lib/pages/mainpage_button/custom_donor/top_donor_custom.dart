@@ -1,3 +1,4 @@
+import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/fontstyle.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,7 @@ class TopDonorCustom {
                 SizedBox(
                   width: _width * .20,
                   child: const CircleAvatar(
+                    backgroundColor: ColorCode.primary_color,
                     radius: 30,
                   ),
                 ),
@@ -27,12 +29,18 @@ class TopDonorCustom {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(
-                          width: _width * .27,
-                          child: const Text("Top Donor Name"),
+                          width: _width * .30,
+                          child: Text(
+                            "Top Donor Name",
+                            style: Style.extrasmallerD14,
+                          ),
                         ),
-                        const Text(": "),
+                        Text(
+                          ": ",
+                          style: Style.extrasmallerD14,
+                        ),
                         SizedBox(
-                          width: _width * .31,
+                          width: _width * .29,
                           child: const Text("Md Nurujjaman"),
                         ),
                       ],
@@ -43,12 +51,18 @@ class TopDonorCustom {
                     Row(
                       children: [
                         SizedBox(
-                          width: _width * .27,
-                          child: const Text("Phone Number"),
+                          width: _width * .30,
+                          child: Text(
+                            "Phone Number",
+                            style: Style.extrasmallerD14,
+                          ),
                         ),
-                        const Text(": "),
+                        Text(
+                          ": ",
+                          style: Style.extrasmallerD14,
+                        ),
                         SizedBox(
-                          width: _width * .31,
+                          width: _width * .29,
                           child: const Text("01957073942"),
                         ),
                       ],
@@ -59,13 +73,18 @@ class TopDonorCustom {
                     Row(
                       children: [
                         SizedBox(
-                          width: _width * .27,
-                          child: const Text("Gender"),
+                          width: _width * .30,
+                          child: Text(
+                            "Gender",
+                            style: Style.extrasmallerD14,
+                          ),
                         ),
-                        const Text(": "),
+                        Text(": "),
                         SizedBox(
-                          width: _width * .31,
-                          child: const Text("male"),
+                          width: _width * .29,
+                          child: Text(
+                            "male",
+                          ),
                         ),
                       ],
                     ),
@@ -75,7 +94,7 @@ class TopDonorCustom {
                   ],
                 ),
                 SizedBox(
-                  width: _width * .16,
+                  width: _width * .15,
                   child: Column(
                     children: [
                       Text(

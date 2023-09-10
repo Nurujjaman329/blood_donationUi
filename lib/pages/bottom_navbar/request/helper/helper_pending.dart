@@ -19,25 +19,29 @@ class RequestHelper {
             Row(
               children: [
                 SizedBox(
-                  width: wide * 0.17,
+                  width: wide * 0.15,
                   child: CircleAvatar(
                     backgroundColor: ColorCode.primary_color,
                     radius: 30,
                   ),
                 ),
-                Sizedmodifys.widet_distance_5,
+                Spacer(),
                 SizedBox(
-                  width: wide * 0.62,
                   child: Column(
                     children: [
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(
-                              width: wide * 0.21, child: Text("Receiver Name")),
+                            width: wide * 0.27,
+                            child: Text(
+                              "Receiver Name",
+                              style: Style.extrasmallerD14,
+                            ),
+                          ),
                           Text(": "),
                           SizedBox(
-                              width: wide * 0.36,
+                              width: wide * 0.30,
                               child: Text(
                                 "Md Nurujjaman",
                                 overflow: TextOverflow.ellipsis,
@@ -50,10 +54,16 @@ class RequestHelper {
                       ),
                       Row(
                         children: [
-                          SizedBox(width: wide * 0.20, child: Text("Phone")),
+                          SizedBox(
+                            width: wide * 0.27,
+                            child: Text(
+                              "Phone",
+                              style: Style.extrasmallerD14,
+                            ),
+                          ),
                           Text(": "),
                           SizedBox(
-                              width: wide * 0.35,
+                              width: wide * 0.30,
                               child: Text(
                                 "01957073942",
                                 overflow: TextOverflow.ellipsis,
@@ -66,10 +76,16 @@ class RequestHelper {
                       ),
                       Row(
                         children: [
-                          SizedBox(width: wide * 0.20, child: Text("Email")),
+                          SizedBox(
+                            width: wide * 0.27,
+                            child: Text(
+                              "Email",
+                              style: Style.extrasmallerD14,
+                            ),
+                          ),
                           Text(": "),
                           SizedBox(
-                              width: wide * 0.35,
+                              width: wide * 0.30,
                               child: Text(
                                 "mdnurujjaman329@gmail.com",
                                 overflow: TextOverflow.ellipsis,
@@ -82,10 +98,16 @@ class RequestHelper {
                       ),
                       Row(
                         children: [
-                          SizedBox(width: wide * 0.20, child: Text("Gender")),
+                          SizedBox(
+                            width: wide * 0.27,
+                            child: Text(
+                              "Gender",
+                              style: Style.extrasmallerD14,
+                            ),
+                          ),
                           Text(": "),
                           SizedBox(
-                              width: wide * 0.35,
+                              width: wide * 0.30,
                               child: Text(
                                 "Male",
                                 overflow: TextOverflow.ellipsis,
@@ -99,10 +121,15 @@ class RequestHelper {
                       Row(
                         children: [
                           SizedBox(
-                              width: wide * 0.20, child: Text("Birth Day")),
+                            width: wide * 0.27,
+                            child: Text(
+                              "Birth Day",
+                              style: Style.extrasmallerD14,
+                            ),
+                          ),
                           Text(": "),
                           SizedBox(
-                              width: wide * 0.35,
+                              width: wide * 0.30,
                               child: Text(
                                 "21/09/1999",
                                 overflow: TextOverflow.ellipsis,
@@ -116,12 +143,15 @@ class RequestHelper {
                       Row(
                         children: [
                           SizedBox(
-                            width: wide * 0.21,
-                            child: Text("Description"),
+                            width: wide * 0.27,
+                            child: Text(
+                              "Description",
+                              style: Style.extrasmallerD14,
+                            ),
                           ),
                           Text(": "),
                           SizedBox(
-                              width: wide * 0.35,
+                              width: wide * 0.30,
                               child: Text(
                                 "Good",
                                 overflow: TextOverflow.ellipsis,
@@ -134,10 +164,15 @@ class RequestHelper {
                       ),
                       Row(
                         children: [
-                          SizedBox(width: wide * 0.20, child: Text("Reason")),
+                          SizedBox(
+                              width: wide * 0.27,
+                              child: Text(
+                                "Reason",
+                                style: Style.extrasmallerD14,
+                              )),
                           Text(": "),
                           SizedBox(
-                            width: wide * 0.35,
+                            width: wide * 0.30,
                             child: Text(
                               "Due to injury",
                               overflow: TextOverflow.ellipsis,
@@ -153,7 +188,7 @@ class RequestHelper {
                   ),
                 ),
                 SizedBox(
-                  width: wide * 0.08,
+                  width: wide * 0.14,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
