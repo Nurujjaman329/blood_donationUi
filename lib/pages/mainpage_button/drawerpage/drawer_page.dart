@@ -5,7 +5,7 @@ import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/material.dart';
 
 import '../../../utils/color_static.dart';
-import 'dialog_page.dart';
+import 'password_change.dart';
 
 class MyDrawer extends StatefulWidget {
   const MyDrawer({super.key});
@@ -73,7 +73,7 @@ class _MyDrawerState extends State<MyDrawer> {
                     context: context,
                     builder: (context) {
                       return const Dialog(
-                        child: DialogPage(),
+                        child: PasswordChange(),
                       );
                     });
               },

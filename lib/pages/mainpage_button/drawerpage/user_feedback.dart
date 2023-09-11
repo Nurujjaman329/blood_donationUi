@@ -30,10 +30,21 @@ class UserFeedBack extends StatelessWidget {
               textInputAction: TextInputAction.done,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(
-                    borderSide: BorderSide(color: ColorCode.primary_color),
-                    borderRadius: BorderRadius.all(Radius.circular(22.0))),
+                  // borderSide: BorderSide(color: ColorCode.primary_color),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(14.0),
+                  ),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: ColorCode.primary_color,
+                  ),
+                ),
                 hintText: "Comment ",
-                prefixIcon: Icon(Icons.comment),
+                prefixIcon: Icon(
+                  Icons.comment,
+                  color: ColorCode.primary_color,
+                ),
               ),
             ),
           ),
