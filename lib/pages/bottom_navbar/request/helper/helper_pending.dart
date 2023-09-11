@@ -1,8 +1,6 @@
 import 'package:firstapp/utils/fontstyle.dart';
 import 'package:flutter/material.dart';
-
 import '../../../../utils/color_static.dart';
-import '../../../../utils/sized_box.dart';
 
 class RequestHelper {
   Widget CardList(index, BuildContext context) {

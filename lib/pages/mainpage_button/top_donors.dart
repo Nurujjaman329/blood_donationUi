@@ -1,8 +1,6 @@
 import 'package:firstapp/pages/mainpage_button/custom_donor/top_donor_custom.dart';
 import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/fontstyle.dart';
-import 'package:firstapp/utils/textstyle_static.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class TopDonor extends StatefulWidget {
