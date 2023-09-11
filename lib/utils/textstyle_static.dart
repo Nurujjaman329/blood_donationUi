@@ -6,11 +6,7 @@ class TextStyles {
   static const inside = TextStyle(
       // color: Colors.black,
       fontSize: 15);
-  // for inside
-  static const qus = TextStyle(
-    color: Colors.black,
-    fontSize: 15,
-  );
+
   //for Qus mark text
   static const greenColor = TextStyle(
     color: Colors.green,

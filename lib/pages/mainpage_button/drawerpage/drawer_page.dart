@@ -1,10 +1,10 @@
-import 'package:firstapp/drawerpage/privacy_security.dart';
-import 'package:firstapp/drawerpage/terms_condition.dart';
-import 'package:firstapp/drawerpage/user_feedback.dart';
+import 'package:firstapp/pages/mainpage_button/drawerpage/privacy_security.dart';
+import 'package:firstapp/pages/mainpage_button/drawerpage/terms_condition.dart';
+import 'package:firstapp/pages/mainpage_button/drawerpage/user_feedback.dart';
 import 'package:firstapp/utils/textstyle_static.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/color_static.dart';
+import '../../../utils/color_static.dart';
 import 'dialog_page.dart';
 
 class MyDrawer extends StatefulWidget {

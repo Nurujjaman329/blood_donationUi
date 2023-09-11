@@ -1,4 +1,4 @@
-import 'package:firstapp/custom_widget/button_widget.dart';
+import 'package:firstapp/utils/custom_widget/button_widget.dart';
 import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/dropdown_button/district_dropdown.dart';
 import 'package:firstapp/utils/dropdown_button/divison_dropdown.dart';
@@ -199,6 +199,52 @@ class _RegistrationPageState extends State<RegistrationPage> {
                   right: 10,
                 ),
                 child: Text(
+                  "Select Gender",
+                  style: Style.extrasmaller600w,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                  bottom: 8,
+                  top: 8,
+                  left: 10,
+                  right: 10,
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        custom_button("Male"),
+                        const SizedBox(
+                          width: 5,
+                        ),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * .05,
+                        ),
+                        custom_button("Female"),
+                        const SizedBox(
+                          width: 5,
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 7,
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * .01,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                  bottom: 8,
+                  top: 8,
+                  left: 10,
+                  right: 10,
+                ),
+                child: Text(
                   "Select Blood Group",
                   style: Style.extrasmaller600w,
                 ),
@@ -256,6 +302,61 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       ],
                     ),
                     const SizedBox(
+                      height: 7,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        bottom: 8,
+                        top: 8,
+                        left: 10,
+                        right: 10,
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Are You ",
+                            style: Style.extrasmaller600w,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              bottom: 8,
+                              top: 8,
+                              left: 10,
+                              right: 10,
+                            ),
+                            child: Column(
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    custom_button("Scouts"),
+                                    const SizedBox(
+                                      width: 5,
+                                    ),
+                                    SizedBox(
+                                      width: MediaQuery.of(context).size.width *
+                                          .05,
+                                    ),
+                                    InkWell(
+                                      onTap: () {},
+                                      child: custom_button("Others"),
+                                    ),
+                                    const SizedBox(
+                                      width: 5,
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * .01,
+                    ),
+                    const SizedBox(
                       height: 10,
                     ),
                     const Divider(
@@ -266,9 +367,11 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 ),
               ),
               const SizedBox(
-                height: 15,
+                height: 08,
               ),
-              Center(child: custom_button("Search"))
+              Center(
+                child: custom_button("Submit"),
+              ),
             ],
           ),
         ),

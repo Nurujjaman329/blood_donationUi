@@ -8,28 +8,30 @@ class UserFeedBack extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 8.0),
+      padding: const EdgeInsets.only(top: 8.0),
       child: Container(
         alignment: Alignment.center,
         height: MediaQuery.of(context).size.height / 3.5,
         decoration: BoxDecoration(
-            color: Colors.white, borderRadius: BorderRadius.circular(10.0)),
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(10.0),
+        ),
         child: Column(children: [
-          Text(
+          const Text(
             "User Feed Back",
             style: TextStyles.inside,
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextFormField(
               textInputAction: TextInputAction.done,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 border: OutlineInputBorder(
-                    borderSide: BorderSide(color: ColorCode.text_color),
-                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    borderSide: BorderSide(color: ColorCode.primary_color),
+                    borderRadius: BorderRadius.all(Radius.circular(22.0))),
                 hintText: "Comment ",
                 prefixIcon: Icon(Icons.comment),
               ),
@@ -44,19 +46,19 @@ class UserFeedBack extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text(
+                  child: const Text(
                     "Close ",
                     style: TextStyles.app_bar,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
                 TextButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text(
+                  child: const Text(
                     "Send",
                     style: TextStyles.app_bar,
                   ),
