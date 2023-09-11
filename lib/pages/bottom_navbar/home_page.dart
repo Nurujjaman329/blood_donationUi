@@ -4,7 +4,6 @@ import 'package:firstapp/pages/mainpage_button/find_donorpage.dart';
 import 'package:firstapp/pages/mainpage_button/top_donors.dart';
 import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/fontstyle.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -59,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                         MaterialPageRoute(
                             builder: (context) => const FindDonorPage()));
                   },
-                  child: Container(
+                  child: SizedBox(
                     height: 200,
                     width: 100,
                     child: Image.asset(
@@ -74,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                         MaterialPageRoute(
                             builder: (context) => const PatientReq()));
                   },
-                  child: Container(
+                  child: SizedBox(
                     height: 200,
                     width: 100,
                     child: Image.asset("assets/images/req.jpg"),
@@ -96,7 +95,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          Container(
+          SizedBox(
             height: 200,
             width: 400,
             child: Image.asset("assets/images/banner.jpg"),

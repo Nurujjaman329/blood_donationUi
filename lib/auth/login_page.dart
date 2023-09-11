@@ -1,5 +1,5 @@
 import 'package:firstapp/pages/mainpage.dart';
-import 'package:firstapp/registerpage/signup_page.dart';
+import 'package:firstapp/auth/signup_page.dart';
 import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/fontstyle.dart';
 import 'package:firstapp/utils/image_static.dart';
@@ -46,14 +46,15 @@ class LoginPage extends StatelessWidget {
                   height: 20,
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.only(
+                      bottom: 8, top: 8, left: 10, right: 10),
                   child: TextFormField(
                     textInputAction: TextInputAction.done,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(
                         borderSide: BorderSide(color: ColorCode.primary_color),
                         borderRadius: BorderRadius.all(
-                          Radius.circular(20.0),
+                          Radius.circular(14.0),
                         ),
                       ),
                       focusedBorder: OutlineInputBorder(
@@ -71,14 +72,15 @@ class LoginPage extends StatelessWidget {
                   height: 10,
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.only(
+                      bottom: 8, top: 8, left: 10, right: 10),
                   child: TextFormField(
                     textInputAction: TextInputAction.done,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(
                         borderSide: BorderSide(color: ColorCode.primary_color),
                         borderRadius: BorderRadius.all(
-                          Radius.circular(20.0),
+                          Radius.circular(14.0),
                         ),
                       ),
                       focusedBorder: OutlineInputBorder(
@@ -104,17 +106,21 @@ class LoginPage extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (context) => const MainPage()));
                   },
-                  child: Container(
-                    width: 350,
-                    height: 50,
-                    alignment: Alignment.center,
-                    child: Text(
-                      "Sign In",
-                      style: Style.extrasmallerw17,
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                        bottom: 8, top: 8, left: 10, right: 10),
+                    child: Container(
+                      height: MediaQuery.of(context).size.height * .07,
+                      alignment: Alignment.center,
+                      decoration: const BoxDecoration(
+                          color: ColorCode.primary_color,
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(14.0))),
+                      child: Text(
+                        "Sign In",
+                        style: Style.extrasmallerw17,
+                      ),
                     ),
-                    decoration: const BoxDecoration(
-                        color: ColorCode.primary_color,
-                        borderRadius: BorderRadius.all(Radius.circular(10.0))),
                   ),
                 ),
                 const SizedBox(
