@@ -10,16 +10,34 @@ class RegistrationPage extends StatefulWidget {
 }
 
 class _RegistrationPageState extends State<RegistrationPage> {
-  String dropdownvalue = 'Khulna';
+  String divison = "Khulna";
+  String district = "Jhenaidah";
+  String thana = "Moheshpur";
 
-  // List of items in our dropdown menu
-  var items = [
+  List<String> items1 = [
     'Khulna',
     'Dhaka',
-    'Item 3',
-    'Item 4',
-    'Item 5',
+    'Chittagong',
+    'Rajshahi',
+    'Mymensing',
   ];
+  List<String> items2 = [
+    'Jhenaidah',
+    'Dhaka',
+    'Chittagong',
+    'Rajshahi',
+    'Mymensing',
+  ];
+  List<String> items3 = [
+    'Moheshpur',
+    'Mohammadpur',
+    'Chittagong',
+    'Rajshahi',
+    'Mymensing',
+  ];
+
+  // List of items in our dropdown menu
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -96,29 +114,115 @@ class _RegistrationPageState extends State<RegistrationPage> {
             SizedBox(
               height: MediaQuery.of(context).size.height * .01,
             ),
-            SizedBox(
-              width: MediaQuery.of(context).size.width * .50,
-              child: DropdownButton(
-                // Initial Value
-                value: dropdownvalue,
-
-                // Down Arrow Icon
-                icon: const Icon(Icons.keyboard_arrow_down),
-
-                // Array list of items
-                items: items.map((String items) {
-                  return DropdownMenuItem(
-                    value: items,
-                    child: Text(items),
-                  );
-                }).toList(),
-                // After selecting the desired option,it will
-                // change button value to selected value
-                onChanged: (String? newValue) {
+            Padding(
+              padding: const EdgeInsets.only(
+                bottom: 8,
+                top: 8,
+                left: 10,
+                right: 10,
+              ),
+              child: DropdownButtonFormField<String>(
+                value: divison,
+                onChanged: (newValue) {
                   setState(() {
-                    dropdownvalue = newValue!;
+                    divison = newValue!;
                   });
                 },
+                items: items1.map<DropdownMenuItem<String>>((String value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(value),
+                  );
+                }).toList(),
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: ColorCode.primary_color,
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(14.0),
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: ColorCode.primary_color,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                bottom: 8,
+                top: 8,
+                left: 10,
+                right: 10,
+              ),
+              child: DropdownButtonFormField<String>(
+                value: district,
+                onChanged: (newValue) {
+                  setState(() {
+                    district = newValue!;
+                  });
+                },
+                items: items2.map<DropdownMenuItem<String>>((String value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(value),
+                  );
+                }).toList(),
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: ColorCode.primary_color,
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(14.0),
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: ColorCode.primary_color,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                bottom: 8,
+                top: 8,
+                left: 10,
+                right: 10,
+              ),
+              child: DropdownButtonFormField<String>(
+                value: thana,
+                onChanged: (newValue) {
+                  setState(() {
+                    thana = newValue!;
+                  });
+                },
+                items: items3.map<DropdownMenuItem<String>>((String value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(value),
+                  );
+                }).toList(),
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: ColorCode.primary_color,
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(14.0),
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: ColorCode.primary_color,
+                    ),
+                  ),
+                ),
               ),
             ),
             Padding(
