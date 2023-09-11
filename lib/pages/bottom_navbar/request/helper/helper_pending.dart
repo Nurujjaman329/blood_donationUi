@@ -11,19 +11,19 @@ class RequestHelper {
       shadowColor: Colors.black,
       color: Colors.white,
       child: Padding(
-        padding: EdgeInsets.only(bottom: 5, right: 8, left: 8, top: 5),
+        padding: const EdgeInsets.only(bottom: 5, right: 8, left: 8, top: 5),
         child: Column(
           children: [
             Row(
               children: [
                 SizedBox(
                   width: wide * 0.15,
-                  child: CircleAvatar(
+                  child: const CircleAvatar(
                     backgroundColor: ColorCode.primary_color,
                     radius: 30,
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 SizedBox(
                   child: Column(
                     children: [
@@ -37,20 +37,24 @@ class RequestHelper {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(": "),
+                          Text(
+                            ": ",
+                            style: Style.extrasmallerD14,
+                          ),
                           SizedBox(
                               width: wide * 0.30,
-                              child: Text(
+                              child: const Text(
                                 "Md Nurujjaman",
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                               )),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 3,
                       ),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(
                             width: wide * 0.27,
@@ -59,20 +63,24 @@ class RequestHelper {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(": "),
+                          Text(
+                            ": ",
+                            style: Style.extrasmallerD14,
+                          ),
                           SizedBox(
                               width: wide * 0.30,
-                              child: Text(
+                              child: const Text(
                                 "01957073942",
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                               )),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 3,
                       ),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(
                             width: wide * 0.27,
@@ -81,20 +89,24 @@ class RequestHelper {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(": "),
+                          Text(
+                            ": ",
+                            style: Style.extrasmallerD14,
+                          ),
                           SizedBox(
                               width: wide * 0.30,
-                              child: Text(
+                              child: const Text(
                                 "mdnurujjaman329@gmail.com",
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                               )),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 3,
                       ),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(
                             width: wide * 0.27,
@@ -103,20 +115,24 @@ class RequestHelper {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(": "),
+                          Text(
+                            ": ",
+                            style: Style.extrasmallerD14,
+                          ),
                           SizedBox(
                               width: wide * 0.30,
-                              child: Text(
+                              child: const Text(
                                 "Male",
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                               )),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 3,
                       ),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(
                             width: wide * 0.27,
@@ -125,20 +141,24 @@ class RequestHelper {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(": "),
+                          Text(
+                            ": ",
+                            style: Style.extrasmallerD14,
+                          ),
                           SizedBox(
                               width: wide * 0.30,
-                              child: Text(
+                              child: const Text(
                                 "21/09/1999",
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                               )),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 3,
                       ),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(
                             width: wide * 0.27,
@@ -147,20 +167,24 @@ class RequestHelper {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(": "),
+                          Text(
+                            ": ",
+                            style: Style.extrasmallerD14,
+                          ),
                           SizedBox(
                               width: wide * 0.30,
-                              child: Text(
+                              child: const Text(
                                 "Good",
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                               )),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 3,
                       ),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SizedBox(
                               width: wide * 0.27,
@@ -168,10 +192,13 @@ class RequestHelper {
                                 "Reason",
                                 style: Style.extrasmallerD14,
                               )),
-                          Text(": "),
+                          Text(
+                            ": ",
+                            style: Style.extrasmallerD14,
+                          ),
                           SizedBox(
                             width: wide * 0.30,
-                            child: Text(
+                            child: const Text(
                               "Due to injury",
                               overflow: TextOverflow.ellipsis,
                               maxLines: 2,
@@ -179,7 +206,7 @@ class RequestHelper {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 3,
                       ),
                     ],
@@ -195,10 +222,10 @@ class RequestHelper {
                         "A+",
                         style: Style.average,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 15,
                       ),
-                      Icon(
+                      const Icon(
                         Icons.call,
                         size: 25,
                       ),
@@ -212,14 +239,14 @@ class RequestHelper {
               children: [
                 TextButton(
                   onPressed: () {},
-                  child: Text("Pending"),
+                  child: const Text("Pending"),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     "Accept",
                   ),
                 ),
