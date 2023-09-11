@@ -36,113 +36,126 @@ class _RegistrationPageState extends State<RegistrationPage> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Container(
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  textInputAction: TextInputAction.done,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(
-                      borderSide: BorderSide(color: ColorCode.primary_color),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(20.0),
-                      ),
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(
+                bottom: 8,
+                top: 8,
+                left: 10,
+                right: 10,
+              ),
+              child: TextFormField(
+                textInputAction: TextInputAction.done,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(color: ColorCode.primary_color),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(14.0),
                     ),
-                    focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: ColorCode.primary_color)),
-                    hintText: "Full Name ",
-                    prefixIcon: Icon(
-                      Icons.man,
-                      color: ColorCode.primary_color,
-                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: ColorCode.primary_color)),
+                  hintText: "Full Name ",
+                  prefixIcon: Icon(
+                    Icons.man,
+                    color: ColorCode.primary_color,
                   ),
                 ),
               ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height * .01,
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .01,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                bottom: 8,
+                top: 8,
+                left: 10,
+                right: 10,
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  textInputAction: TextInputAction.done,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(
-                      borderSide: BorderSide(color: ColorCode.primary_color),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(20.0),
-                      ),
+              child: TextFormField(
+                textInputAction: TextInputAction.done,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(color: ColorCode.primary_color),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(14.0),
                     ),
-                    focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: ColorCode.primary_color)),
-                    hintText: "Email ",
-                    prefixIcon: Icon(
-                      Icons.email,
-                      color: ColorCode.primary_color,
-                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: ColorCode.primary_color)),
+                  hintText: "Email ",
+                  prefixIcon: Icon(
+                    Icons.email,
+                    color: ColorCode.primary_color,
                   ),
                 ),
               ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height * .01,
-              ),
-              Container(
-                width: MediaQuery.of(context).size.width * .50,
-                child: DropdownButton(
-                  // Initial Value
-                  value: dropdownvalue,
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .01,
+            ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width * .50,
+              child: DropdownButton(
+                // Initial Value
+                value: dropdownvalue,
 
-                  // Down Arrow Icon
-                  icon: const Icon(Icons.keyboard_arrow_down),
+                // Down Arrow Icon
+                icon: const Icon(Icons.keyboard_arrow_down),
 
-                  // Array list of items
-                  items: items.map((String items) {
-                    return DropdownMenuItem(
-                      value: items,
-                      child: Text(items),
-                    );
-                  }).toList(),
-                  // After selecting the desired option,it will
-                  // change button value to selected value
-                  onChanged: (String? newValue) {
-                    setState(() {
-                      dropdownvalue = newValue!;
-                    });
-                  },
-                ),
+                // Array list of items
+                items: items.map((String items) {
+                  return DropdownMenuItem(
+                    value: items,
+                    child: Text(items),
+                  );
+                }).toList(),
+                // After selecting the desired option,it will
+                // change button value to selected value
+                onChanged: (String? newValue) {
+                  setState(() {
+                    dropdownvalue = newValue!;
+                  });
+                },
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  textInputAction: TextInputAction.done,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: ColorCode.primary_color,
-                      ),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(20.0),
-                      ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                bottom: 8,
+                top: 8,
+                left: 10,
+                right: 10,
+              ),
+              child: TextFormField(
+                textInputAction: TextInputAction.done,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: ColorCode.primary_color,
                     ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: ColorCode.primary_color,
-                      ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(14.0),
                     ),
-                    hintText: "Password ",
-                    prefixIcon: Icon(
-                      Icons.lock,
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
                       color: ColorCode.primary_color,
                     ),
                   ),
+                  hintText: "Password ",
+                  prefixIcon: Icon(
+                    Icons.lock,
+                    color: ColorCode.primary_color,
+                  ),
                 ),
               ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height * .01,
-              ),
-            ],
-          ),
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .01,
+            ),
+          ],
         ),
       ),
     );

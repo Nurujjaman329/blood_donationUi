@@ -12,10 +12,10 @@ class VerifyPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String _code = "";
+    String code = "";
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white),
+        iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: ColorCode.primary_color,
         elevation: 0,
         centerTitle: true,
@@ -33,7 +33,7 @@ class VerifyPage extends StatelessWidget {
                 SizedBox(
                   height: MediaQuery.of(context).size.height * .25,
                   child: Padding(
-                    padding: EdgeInsets.only(top: 15),
+                    padding: const EdgeInsets.only(top: 15),
                     child: CircleAvatar(
                       radius: 50,
                       backgroundColor: Colors.transparent,
@@ -47,10 +47,9 @@ class VerifyPage extends StatelessWidget {
                 SizedBox(
                   height: MediaQuery.of(context).size.height * .08,
                 ),
-
-                // const Spacer(),
                 Padding(
-                  padding: EdgeInsets.all(25.0),
+                  padding: const EdgeInsets.only(
+                      bottom: 8, top: 8, left: 10, right: 10),
                   child: PinFieldAutoFill(
                     textInputAction: TextInputAction.done,
                     decoration: BoxLooseDecoration(
@@ -59,7 +58,7 @@ class VerifyPage extends StatelessWidget {
                       bgColorBuilder: const FixedColorBuilder(Colors.white),
                       strokeWidth: 1.2,
                     ),
-                    currentCode: _code,
+                    currentCode: code,
                     onCodeSubmitted: (code) {},
                     onCodeChanged: (code) {
                       if (code!.length == 4) {
@@ -69,36 +68,41 @@ class VerifyPage extends StatelessWidget {
                     codeLength: 4,
                   ),
                 ),
-                //const Spacer(),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * .07,
                 ),
-
                 InkWell(
                   onTap: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => RegistrationPage()));
+                            builder: (context) => const RegistrationPage()));
                   },
-                  child: Container(
-                    width: 320,
-                    height: 50,
-                    alignment: Alignment.center,
-                    child: Text(
-                      "Verify",
-                      style: Style.extrasmallerw17,
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                      bottom: 8,
+                      left: 10,
+                      right: 10,
                     ),
-                    decoration: BoxDecoration(
-                        color: ColorCode.primary_color,
-                        borderRadius: BorderRadius.all(Radius.circular(10.0))),
+                    child: Container(
+                      height: 50,
+                      alignment: Alignment.center,
+                      decoration: const BoxDecoration(
+                          color: ColorCode.primary_color,
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(14.0))),
+                      child: Text(
+                        "Verify",
+                        style: Style.extrasmallerw17,
+                      ),
+                    ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 65),
+                  padding: const EdgeInsets.only(left: 65),
                   child: Row(
                     children: [
                       Text(
@@ -106,7 +110,7 @@ class VerifyPage extends StatelessWidget {
                         style: Style.extrasmallerB17,
                       ),
                       Sizedmodifys.quswidth,
-                      Text(
+                      const Text(
                         "Resend",
                         style: TextStyles.greenColor,
                       ),
