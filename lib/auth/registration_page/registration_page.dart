@@ -1,5 +1,5 @@
-import 'package:firstapp/utils/custom_widget/button_widget.dart';
 import 'package:firstapp/utils/color_static.dart';
+import 'package:firstapp/utils/dropdown_button/blood_dropdown.dart';
 import 'package:firstapp/utils/dropdown_button/district_dropdown.dart';
 import 'package:firstapp/utils/dropdown_button/divison_dropdown.dart';
 import 'package:firstapp/utils/dropdown_button/gender_dropdown.dart';
@@ -196,140 +196,27 @@ class _RegistrationPageState extends State<RegistrationPage> {
               SizedBox(
                 height: MediaQuery.of(context).size.height * .01,
               ),
-              Padding(
-                padding: const EdgeInsets.only(
-                  bottom: 8,
-                  top: 8,
-                  left: 10,
-                  right: 10,
-                ),
-                child: Text(
-                  "Select Blood Group",
-                  style: Style.extrasmaller600w,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(
-                  bottom: 8,
-                  top: 8,
-                  left: 10,
-                  right: 10,
-                ),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        custom_button("A+"),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        custom_button("A-"),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        custom_button("B+"),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        custom_button("B-"),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                      ],
-                    ),
-                    const SizedBox(
-                      height: 7,
-                    ),
-                    Row(
-                      children: [
-                        custom_button("A+"),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        custom_button("A-"),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        custom_button("B+"),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        custom_button("B-"),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                      ],
-                    ),
-                    const SizedBox(
-                      height: 7,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        bottom: 8,
-                        top: 8,
-                        left: 10,
-                        right: 10,
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Are You ",
-                            style: Style.extrasmaller600w,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(
-                              bottom: 8,
-                              top: 8,
-                              left: 10,
-                              right: 10,
-                            ),
-                            child: Column(
-                              children: [
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    custom_button("Scouts"),
-                                    const SizedBox(
-                                      width: 5,
-                                    ),
-                                    SizedBox(
-                                      width: MediaQuery.of(context).size.width *
-                                          .05,
-                                    ),
-                                    InkWell(
-                                      onTap: () {},
-                                      child: custom_button("Others"),
-                                    ),
-                                    const SizedBox(
-                                      width: 5,
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      height: MediaQuery.of(context).size.height * .01,
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    const Divider(
-                      height: 4,
-                      color: ColorCode.text_color,
-                    ),
-                  ],
-                ),
-              ),
+              const BloodDropDown(),
               const SizedBox(
                 height: 08,
               ),
-              Center(
-                child: custom_button("Submit"),
+              InkWell(
+                onTap: () {},
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                      bottom: 8, top: 8, left: 10, right: 10),
+                  child: Container(
+                    height: MediaQuery.of(context).size.height * .07,
+                    alignment: Alignment.center,
+                    decoration: const BoxDecoration(
+                        color: ColorCode.primary_color,
+                        borderRadius: BorderRadius.all(Radius.circular(14.0))),
+                    child: Text(
+                      "Submit",
+                      style: Style.extrasmallerw17,
+                    ),
+                  ),
+                ),
               ),
             ],
           ),

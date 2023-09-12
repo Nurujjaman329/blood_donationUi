@@ -44,7 +44,7 @@ class _BloodDropDownState extends State<BloodDropDown> {
               isExpanded: true,
               icon: const Icon(Icons.arrow_drop_down),
               iconSize: 35,
-              hint: const Text("Select Divison"),
+              hint: const Text("Select Blood Group"),
               value: blood,
               onChanged: (newvalue) {
                 setState(() {
