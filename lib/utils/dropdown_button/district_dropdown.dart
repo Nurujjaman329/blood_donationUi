@@ -9,9 +9,9 @@ class DistrictDropDown extends StatefulWidget {
 }
 
 class _DistrictDropDownState extends State<DistrictDropDown> {
-  String district = "Jhenaidah";
+  String? district;
 
-  List<String> items2 = [
+  final items2 = [
     'Jhenaidah',
     'Dhaka',
     'Chittagong',
@@ -27,33 +27,39 @@ class _DistrictDropDownState extends State<DistrictDropDown> {
         left: 10,
         right: 10,
       ),
-      child: DropdownButtonFormField<String>(
-        value: district,
-        onChanged: (newValue) {
-          setState(() {
-            district = newValue!;
-          });
-        },
-        items: items2.map<DropdownMenuItem<String>>((String value) {
-          return DropdownMenuItem<String>(
-            value: value,
-            child: Text(value),
-          );
-        }).toList(),
-        decoration: const InputDecoration(
-          border: OutlineInputBorder(
-            borderSide: BorderSide(
-              color: ColorCode.primary_color,
-            ),
-            borderRadius: BorderRadius.all(
-              Radius.circular(14.0),
-            ),
+      child: Container(
+        width: double.infinity,
+        decoration: BoxDecoration(
+          borderRadius: const BorderRadius.all(
+            Radius.circular(12),
           ),
-          focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(
-              color: ColorCode.primary_color,
-            ),
+          border: Border.all(
+            color: ColorCode.primary_color,
           ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.only(
+            bottom: 8,
+            top: 8,
+            left: 10,
+            right: 10,
+          ),
+          child: DropdownButton(
+              underline: const SizedBox(),
+              isExpanded: true,
+              icon: const Icon(Icons.arrow_drop_down),
+              iconSize: 35,
+              hint: const Text("Select District"),
+              value: district,
+              onChanged: (newvalue) {
+                setState(() {
+                  district = newvalue;
+                });
+              },
+              items: items2.map((valueItem) {
+                return DropdownMenuItem(
+                    value: valueItem, child: Text(valueItem));
+              }).toList()),
         ),
       ),
     );

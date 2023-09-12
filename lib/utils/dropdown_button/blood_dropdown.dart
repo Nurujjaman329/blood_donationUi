@@ -1,23 +1,18 @@
 import 'package:firstapp/utils/color_static.dart';
 import 'package:flutter/material.dart';
 
-class ThanaDropDown extends StatefulWidget {
-  const ThanaDropDown({super.key});
+class BloodDropDown extends StatefulWidget {
+  const BloodDropDown({super.key});
 
   @override
-  State<ThanaDropDown> createState() => _ThanaDropDownState();
+  State<BloodDropDown> createState() => _BloodDropDownState();
 }
 
-class _ThanaDropDownState extends State<ThanaDropDown> {
-  String? thana;
+class _BloodDropDownState extends State<BloodDropDown> {
+  String? blood;
 
-  final items3 = [
-    'Moheshpur',
-    'Mohammadpur',
-    'Chittagong',
-    'Rajshahi',
-    'Mymensing',
-  ];
+  final items5 = ["A+", "A-", "B+", "B-", "O+", "0-", "AB+"];
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -49,14 +44,14 @@ class _ThanaDropDownState extends State<ThanaDropDown> {
               isExpanded: true,
               icon: const Icon(Icons.arrow_drop_down),
               iconSize: 35,
-              hint: const Text("Select Thana"),
-              value: thana,
+              hint: const Text("Select Divison"),
+              value: blood,
               onChanged: (newvalue) {
                 setState(() {
-                  thana = newvalue;
+                  blood = newvalue;
                 });
               },
-              items: items3.map((valueItem) {
+              items: items5.map((valueItem) {
                 return DropdownMenuItem(
                     value: valueItem, child: Text(valueItem));
               }).toList()),

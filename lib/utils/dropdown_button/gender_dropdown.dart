@@ -1,25 +1,19 @@
 import 'package:firstapp/utils/color_static.dart';
 import 'package:flutter/material.dart';
 
-class ThanaDropDown extends StatefulWidget {
-  const ThanaDropDown({super.key});
+class GenderDropDown extends StatefulWidget {
+  const GenderDropDown({super.key});
 
   @override
-  State<ThanaDropDown> createState() => _ThanaDropDownState();
+  State<GenderDropDown> createState() => _GenderDropDownState();
 }
 
-class _ThanaDropDownState extends State<ThanaDropDown> {
-  String? thana;
-
-  final items3 = [
-    'Moheshpur',
-    'Mohammadpur',
-    'Chittagong',
-    'Rajshahi',
-    'Mymensing',
-  ];
+class _GenderDropDownState extends State<GenderDropDown> {
   @override
   Widget build(BuildContext context) {
+    String? gender;
+
+    final item4 = ["Male", "Female", "Others"];
     return Padding(
       padding: const EdgeInsets.only(
         bottom: 8,
@@ -49,14 +43,14 @@ class _ThanaDropDownState extends State<ThanaDropDown> {
               isExpanded: true,
               icon: const Icon(Icons.arrow_drop_down),
               iconSize: 35,
-              hint: const Text("Select Thana"),
-              value: thana,
+              hint: const Text("Select Gender"),
+              value: gender,
               onChanged: (newvalue) {
                 setState(() {
-                  thana = newvalue;
+                  gender = newvalue;
                 });
               },
-              items: items3.map((valueItem) {
+              items: item4.map((valueItem) {
                 return DropdownMenuItem(
                     value: valueItem, child: Text(valueItem));
               }).toList()),
