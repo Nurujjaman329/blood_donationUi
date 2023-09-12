@@ -1,5 +1,6 @@
 import 'package:firstapp/utils/custom_widget/button_widget.dart';
 import 'package:firstapp/utils/color_static.dart';
+import 'package:firstapp/utils/dropdown_button/blood_dropdown.dart';
 import 'package:firstapp/utils/dropdown_button/district_dropdown.dart';
 import 'package:firstapp/utils/dropdown_button/divison_dropdown.dart';
 import 'package:firstapp/utils/dropdown_button/thana_dropdown.dart';
@@ -48,90 +49,49 @@ class _FindDonorPageState extends State<FindDonorPage> {
                 right: 10,
               ),
               child: Text(
-                "Select Blood Group",
+                "Find Donor",
                 style: Style.extrasmaller600w,
               ),
             ),
-            Column(
+            const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(
-                    bottom: 8,
-                    top: 8,
-                    left: 10,
-                    right: 10,
-                  ),
-                  child: Row(
-                    children: [
-                      custom_button("A+"),
-                      const SizedBox(
-                        width: 5,
-                      ),
-                      custom_button("A-"),
-                      const SizedBox(
-                        width: 5,
-                      ),
-                      custom_button("B+"),
-                      const SizedBox(
-                        width: 5,
-                      ),
-                      custom_button("B-"),
-                      const SizedBox(
-                        width: 5,
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(
+                BloodDropDown(),
+                SizedBox(
                   height: 2,
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(
-                    bottom: 8,
-                    top: 8,
-                    left: 10,
-                    right: 10,
-                  ),
-                  child: Row(
-                    children: [
-                      custom_button("A+"),
-                      const SizedBox(
-                        width: 5,
-                      ),
-                      custom_button("A-"),
-                      const SizedBox(
-                        width: 5,
-                      ),
-                      custom_button("B+"),
-                      const SizedBox(
-                        width: 5,
-                      ),
-                      custom_button("B-"),
-                      const SizedBox(
-                        width: 5,
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(
+                DivisonDropDown(),
+                SizedBox(
                   height: 2,
                 ),
-                const DivisonDropDown(),
-                const SizedBox(
+                DistrictDropDown(),
+                SizedBox(
                   height: 2,
                 ),
-                const DistrictDropDown(),
-                const SizedBox(
-                  height: 2,
-                ),
-                const ThanaDropDown(),
+                ThanaDropDown(),
               ],
             ),
             const SizedBox(
               height: 15,
             ),
-            Center(child: custom_button("Search"))
+            InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: const EdgeInsets.only(
+                    bottom: 8, top: 8, left: 10, right: 10),
+                child: Container(
+                  height: MediaQuery.of(context).size.height * .07,
+                  alignment: Alignment.center,
+                  decoration: const BoxDecoration(
+                      color: ColorCode.primary_color,
+                      borderRadius: BorderRadius.all(Radius.circular(14.0))),
+                  child: Text(
+                    "Sign In",
+                    style: Style.extrasmallerw17,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
