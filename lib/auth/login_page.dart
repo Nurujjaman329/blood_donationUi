@@ -49,7 +49,7 @@ class LoginPage extends StatelessWidget {
                   padding: const EdgeInsets.only(
                       bottom: 8, top: 8, left: 10, right: 10),
                   child: TextFormField(
-                    textInputAction: TextInputAction.done,
+                    textInputAction: TextInputAction.next,
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(
                         borderSide: BorderSide(color: ColorCode.primary_color),
