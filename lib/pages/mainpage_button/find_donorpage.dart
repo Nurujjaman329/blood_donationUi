@@ -1,11 +1,9 @@
-import 'package:firstapp/utils/custom_widget/button_widget.dart';
 import 'package:firstapp/utils/color_static.dart';
 import 'package:firstapp/utils/dropdown_button/blood_dropdown.dart';
 import 'package:firstapp/utils/dropdown_button/district_dropdown.dart';
 import 'package:firstapp/utils/dropdown_button/divison_dropdown.dart';
 import 'package:firstapp/utils/dropdown_button/thana_dropdown.dart';
 import 'package:firstapp/utils/fontstyle.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FindDonorPage extends StatefulWidget {
