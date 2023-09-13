@@ -33,7 +33,9 @@ class VerifyPage extends StatelessWidget {
                 SizedBox(
                   height: MediaQuery.of(context).size.height * .25,
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 15),
+                    padding: const EdgeInsets.only(
+                      top: 15,
+                    ),
                     child: CircleAvatar(
                       radius: 50,
                       backgroundColor: Colors.transparent,
@@ -49,7 +51,11 @@ class VerifyPage extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(
-                      bottom: 8, top: 8, left: 10, right: 10),
+                    bottom: 8,
+                    top: 8,
+                    left: 10,
+                    right: 10,
+                  ),
                   child: PinFieldAutoFill(
                     textInputAction: TextInputAction.done,
                     decoration: BoxLooseDecoration(
@@ -78,9 +84,11 @@ class VerifyPage extends StatelessWidget {
                 InkWell(
                   onTap: () {
                     Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const RegistrationPage()));
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const RegistrationPage(),
+                      ),
+                    );
                   },
                   child: Padding(
                     padding: const EdgeInsets.only(
@@ -92,9 +100,11 @@ class VerifyPage extends StatelessWidget {
                       height: 50,
                       alignment: Alignment.center,
                       decoration: const BoxDecoration(
-                          color: ColorCode.primary_color,
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(14.0))),
+                        color: ColorCode.primary_color,
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(14.0),
+                        ),
+                      ),
                       child: Text(
                         "Verify",
                         style: Style.extrasmallerw17,

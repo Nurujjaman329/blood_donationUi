@@ -58,7 +58,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         left: 15,
                         top: 8,
                         bottom: 8,
@@ -69,13 +69,16 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                     CupertinoSwitch(
-                        activeColor: ColorCode.primary_color,
-                        value: _switch,
-                        onChanged: (value) {
-                          setState(() {
+                      activeColor: ColorCode.primary_color,
+                      value: _switch,
+                      onChanged: (value) {
+                        setState(
+                          () {
                             _switch = value;
-                          });
-                        }),
+                          },
+                        );
+                      },
+                    ),
                   ],
                 ),
               ),
@@ -88,7 +91,7 @@ class _ProfilePageState extends State<ProfilePage> {
               style: Style.extrasmaller600w,
             ),
             Padding(
-              padding: EdgeInsets.all(5.0),
+              padding: const EdgeInsets.all(5.0),
               child: Card(
                 // elevation: 30,
                 shadowColor: Colors.black,
@@ -96,12 +99,12 @@ class _ProfilePageState extends State<ProfilePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Divider(
+                    const Divider(
                       color: ColorCode.text_color,
                       height: 4,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         left: 15,
                         top: 8,
                         bottom: 8,
@@ -115,22 +118,22 @@ class _ProfilePageState extends State<ProfilePage> {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(" : "),
+                          const Text(" : "),
                           SizedBox(
                             width: _width * .60,
-                            child: Text(
+                            child: const Text(
                               "Md Nurujjaman",
                             ),
                           ),
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: ColorCode.text_color,
                       height: 4,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         left: 15,
                         top: 8,
                         bottom: 8,
@@ -144,22 +147,22 @@ class _ProfilePageState extends State<ProfilePage> {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(" : "),
+                          const Text(" : "),
                           SizedBox(
                             width: _width * .60,
-                            child: Text(
+                            child: const Text(
                               "mdnurujjaman329@gmail.com",
                             ),
                           ),
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: ColorCode.text_color,
                       height: 4,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         left: 15,
                         top: 8,
                         bottom: 8,
@@ -173,22 +176,22 @@ class _ProfilePageState extends State<ProfilePage> {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(" : "),
+                          const Text(" : "),
                           SizedBox(
                             width: _width * .60,
-                            child: Text(
+                            child: const Text(
                               "01957073942",
                             ),
                           ),
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: ColorCode.text_color,
                       height: 4,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         left: 15,
                         top: 8,
                         bottom: 8,
@@ -202,22 +205,22 @@ class _ProfilePageState extends State<ProfilePage> {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(" : "),
+                          const Text(" : "),
                           SizedBox(
                             width: _width * .60,
-                            child: Text(
+                            child: const Text(
                               "B+",
                             ),
                           ),
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: ColorCode.text_color,
                       height: 4,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         left: 15,
                         top: 8,
                         bottom: 8,
@@ -231,17 +234,17 @@ class _ProfilePageState extends State<ProfilePage> {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(" : "),
+                          const Text(" : "),
                           SizedBox(
                             width: _width * .60,
-                            child: Text(
+                            child: const Text(
                               "male",
                             ),
                           ),
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: ColorCode.text_color,
                       height: 4,
                     ),
@@ -257,7 +260,7 @@ class _ProfilePageState extends State<ProfilePage> {
               style: Style.extrasmaller600w,
             ),
             Padding(
-              padding: EdgeInsets.all(5.0),
+              padding: const EdgeInsets.all(5.0),
               child: Card(
                 // elevation: 30,
                 shadowColor: Colors.black,
@@ -265,12 +268,12 @@ class _ProfilePageState extends State<ProfilePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Divider(
+                    const Divider(
                       color: ColorCode.text_color,
                       height: 4,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         left: 15,
                         top: 8,
                         bottom: 8,
@@ -284,22 +287,22 @@ class _ProfilePageState extends State<ProfilePage> {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(" : "),
+                          const Text(" : "),
                           SizedBox(
                             width: _width * .60,
-                            child: Text(
+                            child: const Text(
                               "Khulna",
                             ),
                           ),
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: ColorCode.text_color,
                       height: 4,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         left: 15,
                         top: 8,
                         bottom: 8,
@@ -313,22 +316,22 @@ class _ProfilePageState extends State<ProfilePage> {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(" : "),
+                          const Text(" : "),
                           SizedBox(
                             width: _width * .60,
-                            child: Text(
+                            child: const Text(
                               "Jhenaidah",
                             ),
                           ),
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: ColorCode.text_color,
                       height: 4,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         left: 15,
                         top: 8,
                         bottom: 8,
@@ -342,22 +345,22 @@ class _ProfilePageState extends State<ProfilePage> {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(" : "),
+                          const Text(" : "),
                           SizedBox(
                             width: _width * .60,
-                            child: Text(
+                            child: const Text(
                               "Moheshpur",
                             ),
                           ),
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: ColorCode.text_color,
                       height: 4,
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         left: 15,
                         top: 8,
                         bottom: 8,
@@ -371,17 +374,17 @@ class _ProfilePageState extends State<ProfilePage> {
                               style: Style.extrasmallerD14,
                             ),
                           ),
-                          Text(" : "),
+                          const Text(" : "),
                           SizedBox(
                             width: _width * .60,
-                            child: Text(
+                            child: const Text(
                               "Swaruppur",
                             ),
                           ),
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: ColorCode.text_color,
                       height: 4,
                     ),

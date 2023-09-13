@@ -52,7 +52,9 @@ class _SignUpPageState extends State<SignUpPage> {
                 textInputAction: TextInputAction.done,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(
-                    borderSide: BorderSide(color: ColorCode.primary_color),
+                    borderSide: BorderSide(
+                      color: ColorCode.primary_color,
+                    ),
                     borderRadius: BorderRadius.all(
                       Radius.circular(14.0),
                     ),
@@ -76,9 +78,11 @@ class _SignUpPageState extends State<SignUpPage> {
             InkWell(
               onTap: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const VerifyPage()));
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const VerifyPage(),
+                  ),
+                );
               },
               child: Padding(
                 padding: const EdgeInsets.only(
@@ -92,8 +96,11 @@ class _SignUpPageState extends State<SignUpPage> {
                   height: 50,
                   alignment: Alignment.center,
                   decoration: const BoxDecoration(
-                      color: ColorCode.primary_color,
-                      borderRadius: BorderRadius.all(Radius.circular(10.0))),
+                    color: ColorCode.primary_color,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(10.0),
+                    ),
+                  ),
                   child: Text(
                     "Continue",
                     style: Style.extrasmallerw17,
@@ -121,9 +128,11 @@ class _SignUpPageState extends State<SignUpPage> {
                 InkWell(
                   onTap: () {
                     Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const LoginPage()));
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LoginPage(),
+                      ),
+                    );
                   },
                   child: const Text(
                     "Sign In",

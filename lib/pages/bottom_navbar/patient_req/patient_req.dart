@@ -33,10 +33,11 @@ class _PatientReqState extends State<PatientReq> {
         ],
       ),
       body: ListView.builder(
-          itemCount: 5,
-          itemBuilder: (BuildContext context, int index) {
-            return RequestHelper().CardList(index, context);
-          }),
+        itemCount: 5,
+        itemBuilder: (BuildContext context, int index) {
+          return RequestHelper().CardList(index, context);
+        },
+      ),
     );
   }
 }
