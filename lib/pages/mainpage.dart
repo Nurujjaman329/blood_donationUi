@@ -49,7 +49,7 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(icon: Icon(Icons.comment), label: "Comment"),
           BottomNavigationBarItem(icon: Icon(Icons.timer), label: 'Timer'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person_2_outlined), label: "Profile"),
+              icon: Icon(Icons.person_outlined), label: "Profile"),
         ],
       ),
       body: _pages[_pageIndex],

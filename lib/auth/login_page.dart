@@ -113,9 +113,11 @@ class LoginPage extends StatelessWidget {
                       height: MediaQuery.of(context).size.height * .07,
                       alignment: Alignment.center,
                       decoration: const BoxDecoration(
-                          color: ColorCode.primary_color,
-                          borderRadius:
-                              BorderRadius.all(Radius.circular(14.0))),
+                        color: ColorCode.primary_color,
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(14.0),
+                        ),
+                      ),
                       child: Text(
                         "Sign In",
                         style: Style.extrasmallerw17,
