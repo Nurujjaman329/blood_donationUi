@@ -53,9 +53,13 @@ class VerifyPage extends StatelessWidget {
                   child: PinFieldAutoFill(
                     textInputAction: TextInputAction.done,
                     decoration: BoxLooseDecoration(
-                      strokeColorBuilder:
-                          PinListenColorBuilder(Colors.black, Colors.black26),
-                      bgColorBuilder: const FixedColorBuilder(Colors.white),
+                      strokeColorBuilder: PinListenColorBuilder(
+                        Colors.black,
+                        Colors.black26,
+                      ),
+                      bgColorBuilder: const FixedColorBuilder(
+                        Colors.white,
+                      ),
                       strokeWidth: 1.2,
                     ),
                     currentCode: code,

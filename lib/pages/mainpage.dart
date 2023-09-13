@@ -28,7 +28,6 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-        // type: BottomNavigationBarType.fixed,
         unselectedItemColor: const Color.fromARGB(255, 119, 115, 115),
         selectedItemColor: ColorCode.primary_color,
         currentIndex: _pageIndex,
